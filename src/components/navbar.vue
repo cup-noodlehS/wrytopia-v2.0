@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary slide-down1">
     <div class="container-fluid nav-pad">
-      <router-link to="/home" class="navbar-brand"
+      <router-link to="/" class="navbar-brand"
         ><img src="images/nav-logo.svg" id="logo"
       /></router-link>
       <button
@@ -19,14 +19,14 @@
         <ul class="navbar-nav">
           <li class="nav-item delay1">
             <router-link
-              to="/home#services"
+              to="/#services"
               class="nav-link hover-lift"
               aria-current="page"
               >SERVICES</router-link
             >
           </li>
           <li class="nav-item delay1">
-            <router-link to="/home#hit" class="nav-link hover-lift"
+            <router-link to="/#hit" class="nav-link hover-lift"
               >HOW IT WORKS</router-link
             >
           </li>
@@ -74,3 +74,4 @@
     </div>
   </div>
 </template>
+<script></script>

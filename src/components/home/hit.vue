@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid hit pt-3" id="hit">
+  <div class="container-fluid hit pt-3" id="hit" ref="hit">
     <center>
       <h1 id="hit-title" class="slide-down1 delay4">HOW IT WORKS</h1>
     </center>
