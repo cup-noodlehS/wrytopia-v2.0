@@ -104,6 +104,19 @@
 #about-us {
   margin-right: 200px;
 }
+#contact-us {
+  font-family: clashDisplayMedium !important;
+  border-radius: 30px;
+  border-width: 2px !important;
+  border-color: #00b18f !important;
+  transition: all 0.6s ease !important;
+  color: #00b18f !important;
+}
+#contact-us:hover {
+  color: white !important;
+  background-color: #00b18f;
+  border-color: #00b18f !important;
+}
 
 @media only screen and (max-width: 768px) {
   #logo {
