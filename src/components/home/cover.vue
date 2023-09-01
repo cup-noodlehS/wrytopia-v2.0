@@ -4,14 +4,11 @@
       class="cover-tagline mb-1 pb-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-right1 delay1"
     >
       <div id="tagline" class="d-flex flex-column justify-content-start">
-        <h1 class="mb-3">From Draft to Confidence</h1>
+        <h1 class="mb-3">Empowering Authors, Framing Stories</h1>
         <p class="mb-3">
-          Hey, looking to elevate your writing career?👀 <br /><br />Wrytopia is
-          a trusted third-party partner, dedicated to supporting English writers
-          worldwide. We Specialize in offereing top-notch writing services that
-          pave the way for your writing carer. Our unique approach helps authors
-          secure both non-exclusive and exclusive contracts on a variety of
-          online writing platforms.
+          Wrytopia is a reliable third-party agent committed to assisting global
+          English writers by providing high-quality writing services that pave
+          the way for your writing carer.
         </p>
         <div
           class="tagline-buttons container-fluid d-flex justify-content-start p-0"
