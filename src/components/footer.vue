@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid d-flex foot justify-content-evenly">
+  <div class="container-fluid d-flex foot justify-content-between">
     <div class="mx-4 mb-3">
       <img src="images/nav-logo.svg" alt="" />
       <div class="ps-4">
