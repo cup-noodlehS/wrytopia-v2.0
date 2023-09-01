@@ -18,17 +18,12 @@
       <div class="collapse navbar-collapse navs" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item delay1">
-            <router-link
-              to="/#services"
-              class="nav-link hover-lift"
-              aria-current="page"
-              >SERVICES</router-link
+            <a href="/#services" class="nav-link hover-lift" aria-current="page"
+              >SERVICES</a
             >
           </li>
           <li class="nav-item delay1">
-            <router-link to="/#hit" class="nav-link hover-lift"
-              >HOW IT WORKS</router-link
-            >
+            <a href="/#hit" class="nav-link hover-lift">HOW IT WORKS</a>
           </li>
           <li class="nav-item delay1" id="about-us">
             <router-link to="/about" class="nav-link hover-lift"
