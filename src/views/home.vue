@@ -10,7 +10,7 @@
     <Hit />
     <Map />
   </main>
-  <footer class="container-fluid d-flex flex-wrap"><Footer /></footer>
+  <footer><Footer /></footer>
 </template>
 
 <script>

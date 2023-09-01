@@ -6,8 +6,12 @@
       <div id="tagline" class="d-flex flex-column justify-content-start">
         <h1 class="mb-3">From Draft to Confidence</h1>
         <p class="mb-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
-          error libero velit nesciunt, quibusdam fugit
+          Hey, looking to elevate your writing career?👀 <br /><br />Wrytopia is
+          a trusted third-party partner, dedicated to supporting English writers
+          worldwide. We Specialize in offereing top-notch writing services that
+          pave the way for your writing carer. Our unique approach helps authors
+          secure both non-exclusive and exclusive contracts on a variety of
+          online writing platforms.
         </p>
         <div
           class="tagline-buttons container-fluid d-flex justify-content-start p-0"
@@ -32,7 +36,8 @@
     <div
       class="cover-img px-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-left1 delay4"
     >
-      <div id="animation1 container1" class="animation-cover"></div>
+      <!-- <div id="animation1 container1" class="animation-cover"></div> -->
+      <div ref="lottieContainer" class="animation-cover"></div>
     </div>
   </div>
 
@@ -102,13 +107,23 @@
     </div>
   </div>
 </template>
-<script setup>
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById("animation1 container1"),
-  path: "./images/animations/Hero.lottie.json",
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  name: "cover animation",
-});
+<script>
+import Lottie from "lottie-web";
+import animationData from "@/assets/Hero.lottie.json"; // Replace with your animation JSON file path
+
+export default {
+  mounted() {
+    this.lottieInstance = Lottie.loadAnimation({
+      container: this.$refs.lottieContainer,
+      animationData: animationData,
+      loop: true,
+      autoplay: true,
+    });
+  },
+  beforeDestroy() {
+    if (this.lottieInstance) {
+      this.lottieInstance.destroy();
+    }
+  },
+};
 </script>

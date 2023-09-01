@@ -8,10 +8,9 @@
         Your outlines, <span class="idk">perfected</span>
       </h1>
       <p id="features-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, minima
-        impedit, voluptatibus cumque accusamus placeat reiciendis suscipit in et
-        nesciunt quas quod, cum asperiores odio voluptatum possimus. Unde, et
-        modi.
+        With our strategies, your story gets accepted when you apply to
+        different online writing platforms. Join hand with Wrytopia to transform
+        your writing aspirations into a successful writing journey.
       </p>
     </div>
     <div>

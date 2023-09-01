@@ -405,7 +405,6 @@ footer {
   padding-bottom: 54px !important;
   margin-top: 100px;
   gap: 10px;
-  justify-content: space-evenly !important;
 }
 footer h5 {
   color: black !important;
@@ -624,7 +623,6 @@ footer span {
   footer {
     padding-left: 20px !important;
     padding-right: 20px !important;
-    justify-content: start !important;
   }
   .service-card {
     padding: 20px !important;
