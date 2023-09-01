@@ -70,3 +70,56 @@
   </div>
 </template>
 <script></script>
+<style scoped>
+#logo {
+  transition: all 0.4s ease;
+}
+#logo:hover {
+  transform: scale(102%);
+}
+.navs {
+  justify-content: end;
+  background-color: white;
+  border-radius: 15px;
+}
+.navbar-nav {
+  justify-content: space-between;
+}
+.navbar {
+  height: 16.5vh !important;
+  background-color: white !important;
+}
+.nav-pad {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.nav-item {
+  margin-right: 1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link {
+  color: black !important;
+}
+#about-us {
+  margin-right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 250px !important;
+  }
+  .nav-pad {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navs {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #about-us {
+    margin-right: 60px;
+  }
+}
+</style>

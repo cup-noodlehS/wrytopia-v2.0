@@ -3,9 +3,7 @@
     <Navbar />
     <h1 class="text-center pt-5">🚧Under Construction🚧</h1>
   </header>
-  <footer class="container-fluid d-flex flex-wrap">
-    <Footer />
-  </footer>
+  <Footer />
 </template>
 <script>
 import Navbar from "../components/navbar.vue";

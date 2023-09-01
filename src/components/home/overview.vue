@@ -27,3 +27,27 @@ export default {
   },
 };
 </script>
+<style scoped>
+.overview {
+  background-color: white;
+}
+
+.wiw {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+}
+#wiw-title {
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-align: center !important;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: clashDisplayMedium !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 20px !important; /* 71.429% */
+  letter-spacing: 2.8px !important;
+}
+</style>

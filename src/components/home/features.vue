@@ -18,3 +18,51 @@
     </div>
   </div>
 </template>
+<style scoped>
+.features {
+  padding: 108px;
+}
+
+#features-header {
+  font-family: clashDisplayMedium !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 20px !important; /* 71.429% */
+  letter-spacing: 2.8px !important;
+}
+
+#features-line {
+  color: black !important;
+  font-family: clashDisplayMedium !important;
+  font-size: 56px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 66px !important;
+}
+
+#features-content {
+  color: #63727e !important;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 30px !important;
+}
+.features-text {
+  width: 400px;
+}
+#features-img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .features {
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .features-text {
+    width: 95% !important;
+  }
+}
+</style>

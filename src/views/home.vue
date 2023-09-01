@@ -10,7 +10,7 @@
     <Hit />
     <Map />
   </main>
-  <footer><Footer /></footer>
+  <Footer />
 </template>
 
 <script>

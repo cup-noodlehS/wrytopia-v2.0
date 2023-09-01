@@ -124,3 +124,105 @@ export default {
   },
 };
 </script>
+<style scoped>
+#contact-us {
+  font-family: clashDisplayMedium !important;
+  border-radius: 30px;
+  border-width: 2px !important;
+  border-color: #00b18f !important;
+  transition: all 0.6s ease !important;
+  color: #00b18f !important;
+}
+#contact-us:hover {
+  color: white !important;
+  background-color: #00b18f;
+  border-color: #00b18f !important;
+}
+.cover {
+  width: 100%;
+  min-height: 83.5vh;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+.cover-img img {
+  height: 500px;
+}
+#tagline h1 {
+  color: black !important;
+  font-family: clashDisplayMedium !important;
+  font-size: 56px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 66px !important;
+}
+#tagline p {
+  font-family: "Poppins" !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+}
+
+.btn-write {
+  font-size: 17px;
+
+  min-width: 150px;
+  font-family: clashDisplayMedium !important;
+  color: white !important;
+  border-color: #00b18f !important;
+  background-color: #00b18f;
+  border-radius: 35px;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  padding-top: 23px !important;
+  padding-bottom: 23px !important;
+  transition: all 0.3s ease;
+}
+.btn-revise {
+  font-size: 17px;
+  min-width: 150px;
+  font-family: clashDisplayMedium !important;
+  color: #00b18f !important;
+  border-color: #00b18f !important;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 35px;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  padding-top: 23px !important;
+  padding-bottom: 23px !important;
+  transition: all 0.3s ease;
+}
+.btn-revise:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px 0px #027962;
+  background-color: #ebeef2;
+}
+.btn-write:hover {
+  background-color: #027962;
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px 0px #43cfb3;
+}
+
+@media only screen and (max-width: 768px) {
+  .cover-img img {
+    height: 380px;
+  }
+  #tagline h1 {
+    font-size: 2.1rem !important;
+    text-align: center;
+  }
+  #tagline p {
+    text-align: center;
+  }
+  .cover-img img {
+    display: none;
+  }
+  .tagline-buttons {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+</style>
