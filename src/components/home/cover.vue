@@ -211,7 +211,7 @@ export default {
     height: 380px;
   }
   #tagline h1 {
-    font-size: 2.1rem !important;
+    font-size: 2rem !important;
     text-align: center;
   }
   #tagline p {
