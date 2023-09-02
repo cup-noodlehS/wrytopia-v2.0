@@ -84,6 +84,8 @@ export default {
   .map {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 70px;
     text-align: center;
   }
 }

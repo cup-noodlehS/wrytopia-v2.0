@@ -59,6 +59,9 @@
     text-align: center;
     padding: 20px;
   }
+  #features-line {
+    font-size: 2.5rem !important;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .features-text {

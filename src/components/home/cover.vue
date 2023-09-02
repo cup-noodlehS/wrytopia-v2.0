@@ -217,9 +217,7 @@ export default {
   #tagline p {
     text-align: center;
   }
-  .cover-img img {
-    display: none;
-  }
+
   .tagline-buttons {
     flex-wrap: wrap !important;
     justify-content: center !important;

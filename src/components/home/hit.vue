@@ -117,8 +117,11 @@
   .hit {
     padding: 20px;
   }
+  #hit-title2 {
+    font-size: 2.5rem !important;
+  }
   #hit-p {
-    width: 100%;
+    width: 93%;
   }
 }
 </style>

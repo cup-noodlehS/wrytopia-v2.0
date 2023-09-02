@@ -2,9 +2,9 @@
   <div class="services mb-5 pt-3" id="services">
     <center><h1 id="services-title">SERVICES</h1></center>
     <center>
-      <h1 id="services-sub">Choose a contract that suits you</h1>
+      <h1 id="services-sub" class="px-1">Choose a contract that suits you</h1>
     </center>
-    <div class="container-fluid row my-3">
+    <div class="container-fluid row my-3 p-0 justify-content-center">
       <div
         class="col-md-6 col-12 my-4 text-center service-option"
         id="creation-btn"
@@ -467,7 +467,11 @@ function showRevision() {
     margin-right: 0 !important;
   }
   .service-card-container {
+    padding: 0 !important;
     justify-content: center !important;
+  }
+  #services-sub {
+    font-size: 2rem !important;
   }
 }
 </style>
