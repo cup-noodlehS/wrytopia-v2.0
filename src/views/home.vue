@@ -1,6 +1,6 @@
 <template>
+  <!-- <Navbar /> -->
   <header>
-    <Navbar />
     <Cover />
   </header>
   <main>
@@ -10,12 +10,12 @@
     <Hit />
     <Map />
   </main>
-  <Footer />
+  <!-- <Footer /> -->
 </template>
 
 <script>
-import Navbar from "../components/navbar.vue";
-import Footer from "../components/footer.vue";
+// import Navbar from "../components/navbar.vue";
+// import Footer from "../components/footer.vue";
 import Cover from "../components/home/cover.vue";
 import Overview from "../components/home/overview.vue";
 import Features from "../components/home/features.vue";
@@ -25,8 +25,8 @@ import Map from "../components/home/map.vue";
 
 export default {
   components: {
-    Navbar,
-    Footer,
+    // Navbar,
+    // Footer,
     Cover,
     Map,
     Overview,

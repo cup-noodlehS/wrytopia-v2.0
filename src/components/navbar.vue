@@ -1,5 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary slide-down1">
+  <nav
+    class="navbar navbar-expand-lg bg-body-tertiary slide-down1 fixed-top"
+    :class="{ hidden: navbarHidden }"
+  >
     <div class="container-fluid nav-pad">
       <router-link to="/" class="navbar-brand"
         ><img src="images/nav-logo.svg" id="logo"
@@ -69,8 +72,42 @@
     </div>
   </div>
 </template>
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      lastScrollPosition: 0,
+      navbarHidden: false,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollPosition > this.lastScrollPosition) {
+        // Scrolling down
+        this.navbarHidden = true;
+      } else {
+        // Scrolling up
+        this.navbarHidden = false;
+      }
+
+      this.lastScrollPosition = currentScrollPosition;
+    },
+  },
+};
+</script>
 <style scoped>
+.hidden {
+  display: none;
+}
 #logo {
   transition: all 0.4s ease;
 }
