@@ -208,8 +208,18 @@ footer span {
 }
 @media only screen and (max-width: 768px) {
   .foot {
-    justify-content: start !important;
+    justify-content: center !important;
     flex-wrap: wrap;
+  }
+  /* footer a {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  } */
+
+  * {
+    text-align: center !important;
   }
   footer {
     padding-left: 20px !important;

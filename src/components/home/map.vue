@@ -11,7 +11,7 @@
           story? Let's Go!
         </h1>
         <a href="#services-sub" class="btn btn-light btn-map me-2 mb-2 mt-3"
-          >BEGIN MAPPING</a
+          >SCHEDULE AN APPOINTMENT</a
         >
       </div>
     </div>

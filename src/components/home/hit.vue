@@ -78,7 +78,7 @@
 }
 #hit-p {
   color: #63727e !important;
-  width: 50%;
+  width: 60%;
   font-family: "Poppins" !important;
   font-size: 18px !important;
   font-style: normal !important;

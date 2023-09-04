@@ -33,7 +33,6 @@
               >ABOUT US</router-link
             >
           </li>
-
           <li class="nav-item">
             <a
               class="btn btn-outline-light px-3 fade1"
