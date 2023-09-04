@@ -2,8 +2,8 @@
   <footer>
     <div class="container-fluid d-flex foot justify-content-between">
       <div class="mx-4 mb-3">
-        <img src="images/nav-logo.svg" alt="" />
-        <div class="ps-4">
+        <img src="images/wrytopia.svg" class="mb-3" alt="" />
+        <div class="">
           <p>Copyright © 2023</p>
           <p>Wrytopia | All Rights Reserved</p>
         </div>
@@ -82,7 +82,10 @@
       </div>
       <div class="mx-4">
         <h5>FOLLOW US</h5>
-        <a href="#" class="link-underline link-underline-opacity-0"
+        <a
+          href="https://www.facebook.com/cale.nina.1"
+          target="_blank"
+          class="link-underline link-underline-opacity-0"
           ><span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +114,7 @@
               /></svg></span
           >Facebook</a
         >
-        <a href="#" class="link-underline link-underline-opacity-0"
+        <!-- <a href="#" class="link-underline link-underline-opacity-0"
           ><span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,8 +136,8 @@
                 fill="#63727e"
               /></svg></span
           >LinkedIn</a
-        >
-        <a href="#" class="link-underline link-underline-opacity-0"
+        > -->
+        <!-- <a href="#" class="link-underline link-underline-opacity-0"
           ><span
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +165,7 @@
                 fill="#63727e"
               /></svg></span
           >Medium</a
-        >
+        > -->
       </div>
     </div>
   </footer>

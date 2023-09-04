@@ -1,6 +1,6 @@
 <template>
   <div
-    class="d-flex flex-wrap features justify-content-center container-fluid align-items-center"
+    class="d-flex flex-wrap features justify-content-center container-fluid align-items-center mb-5"
   >
     <div class="features-text">
       <p id="features-header">FEATURES</p>
