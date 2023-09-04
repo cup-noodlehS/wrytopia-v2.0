@@ -166,7 +166,7 @@ export default {
 }
 
 .btn-write {
-  font-size: 17px;
+  font-size: 15px;
 
   min-width: 150px;
   font-family: clashDisplayMedium !important;
@@ -181,7 +181,7 @@ export default {
   transition: all 0.3s ease;
 }
 .btn-revise {
-  font-size: 17px;
+  font-size: 15px;
   min-width: 150px;
   font-family: clashDisplayMedium !important;
   color: #00b18f !important;

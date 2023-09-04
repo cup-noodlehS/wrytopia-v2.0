@@ -120,7 +120,7 @@ export default {
   border-radius: 15px;
 }
 .navbar-nav {
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .navbar {
   height: 16.5vh !important;
@@ -139,7 +139,7 @@ export default {
   color: black !important;
 }
 #about-us {
-  margin-right: 200px;
+  /* margin-right: 200px; */
 }
 #contact-us {
   font-family: clashDisplayMedium !important;
@@ -168,8 +168,8 @@ export default {
   }
 }
 @media only screen and (max-width: 1200px) {
-  #about-us {
+  /* #about-us {
     margin-right: 60px;
-  }
+  } */
 }
 </style>

@@ -18,6 +18,14 @@
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  from {
+    display: flex !important;
+  }
+  to {
+    display: none !important;
+  }
+}
 @keyframes slideRight {
   0% {
     opacity: 0;
@@ -50,6 +58,9 @@
 }
 .fade1 {
   animation: fadeKey 3s;
+}
+.fadeout1 {
+  animation: fadeOut 1s !important;
 }
 .delay1 {
   animation-delay: 100ms;
