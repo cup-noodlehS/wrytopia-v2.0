@@ -70,13 +70,17 @@
       </div>
       <div class="mx-4 mb-3">
         <h5>LEGAL POLICIES</h5>
-        <a href="#" class="link-underline link-underline-opacity-0"
+        <a
+          href="/terms-and-conditions"
+          class="link-underline link-underline-opacity-0"
           >Terms & Conditions</a
         >
-        <a href="#" class="link-underline link-underline-opacity-0"
+        <a
+          href="/privacy-policy"
+          class="link-underline link-underline-opacity-0"
           >Privacy Policy</a
         >
-        <a href="#" class="link-underline link-underline-opacity-0"
+        <a href="/refund-policy" class="link-underline link-underline-opacity-0"
           >Refund Policy</a
         >
       </div>
