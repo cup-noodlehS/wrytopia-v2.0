@@ -1,53 +1,58 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg bg-body-tertiary slide-down1 fixed-top"
-    :class="{ hidden: navbarHidden }"
-  >
-    <div class="container-fluid nav-pad">
-      <router-link to="/" class="navbar-brand"
-        ><img src="images/nav-logo.svg" id="logo"
-      /></router-link>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navs" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item delay1">
-            <a href="/#services" class="nav-link hover-lift" aria-current="page"
-              >SERVICES</a
-            >
-          </li>
-          <li class="nav-item delay1">
-            <a href="/#hit" class="nav-link hover-lift">HOW IT WORKS</a>
-          </li>
-          <li class="nav-item delay1" id="about-us">
-            <router-link to="/about" class="nav-link hover-lift"
-              >ABOUT US</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="btn btn-outline-light px-3 fade1"
-              type="button"
-              id="contact-us"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              >CONTACT US</a
-            >
-          </li>
-        </ul>
+  <transition name="navshow">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      v-if="!navbarHidden"
+    >
+      <div class="container-fluid nav-pad">
+        <router-link to="/" class="navbar-brand"
+          ><img src="images/nav-logo.svg" id="logo"
+        /></router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navs" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item delay1">
+              <a
+                href="/#services"
+                class="nav-link hover-lift"
+                aria-current="page"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item delay1">
+              <a href="/#hit" class="nav-link hover-lift">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item delay1" id="about-us">
+              <router-link to="/about" class="nav-link hover-lift"
+                >ABOUT US</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light px-3 fade1"
+                type="button"
+                id="contact-us"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </transition>
   <div
     class="offcanvas offcanvas-end"
     tabindex="-1"
@@ -152,6 +157,12 @@ export default {
   color: white !important;
   background-color: #00b18f;
   border-color: #00b18f !important;
+}
+.navshow-enter-active {
+  animation: slideDown 1.5s;
+}
+.navshow-leave-active {
+  animation: slideDown 1s reverse;
 }
 
 @media only screen and (max-width: 768px) {

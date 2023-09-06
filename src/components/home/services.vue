@@ -22,262 +22,282 @@
         Outline Revision
       </div>
     </div>
-    <div
-      class="row service-card-container outline-creation container-fluid mx-0 justify-content-center"
-      :class="{ 'show slide-right1': left, 'not-show slide-left1': right }"
-    >
-      <div class="col-lg-6 col-12" id="service-card-left">
-        <div
-          id="card-left-content"
-          class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
-        >
-          <h1 class="mycard-title">Contract C</h1>
-          <p class="mycard-description mb-3">
-            A one-time fee and service provided by the third-party agent to the
-            writer.
-          </p>
-          <div class="mycard-list mb-3">
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                creates your story outline in a single session
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                one-on-one meeting with the team to curate your perfect outline
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                budget-friendly price range based on your story needs
-              </p>
-            </div>
-            <div class="d-flex">
-              <img src="images/services/exRed.png" class="ex me-2" alt="" />
-              <p class="mycard-list-text">
-                guarantee for outline’s success in contract securing
-              </p>
-            </div>
-          </div>
-          <a
-            href="/contract/c"
-            class="btn btn-success btn-getstarted-left me-2 mb-2"
-            >GET STARTED</a
+    <transition name="service-show">
+      <div
+        class="row service-card-container outline-creation container-fluid mx-0 justify-content-center"
+        v-if="showOutline"
+      >
+        <div class="col-lg-6 col-12" id="service-card-left">
+          <div
+            id="card-left-content"
+            class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
           >
+            <h1 class="mycard-title">Contract C</h1>
+            <p class="mycard-description mb-3">
+              A one-time fee and service provided by the third-party agent to
+              the writer.
+            </p>
+            <div class="mycard-list mb-3">
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  creates your story outline in a single session
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  one-on-one meeting with the team to curate your perfect
+                  outline
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  budget-friendly price range based on your story needs
+                </p>
+              </div>
+              <div class="d-flex">
+                <img src="images/services/exRed.png" class="ex me-2" alt="" />
+                <p class="mycard-list-text">
+                  guarantee for outline’s success in contract securing
+                </p>
+              </div>
+            </div>
+            <a
+              href="/contract/c"
+              class="btn btn-success btn-getstarted-left me-2 mb-2"
+              >GET STARTED</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 col-12" id="service-card-right">
+          <div
+            id="card-right-content"
+            class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
+          >
+            <h1 class="mycard-title">Contract CE</h1>
+            <p class="mycard-description mb-3">
+              An exclusive service until the story of the writer gets accepted
+              in the online writing platform.
+            </p>
+            <div class="mycard-list mb-3">
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  unlimited outline revision for your stories
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  one-on-one meeting with the team to curate your perfect
+                  outline
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  more premium pricing tailored to your story’s requirements
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  guarantee for outline’s success in contract securing
+                </p>
+              </div>
+            </div>
+            <a
+              href="/contract/ce"
+              class="btn btn-success btn-getstarted-right me-2 mb-2"
+              >GET STARTED</a
+            >
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 col-12" id="service-card-right">
-        <div
-          id="card-right-content"
-          class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
-        >
-          <h1 class="mycard-title">Contract CE</h1>
-          <p class="mycard-description mb-3">
-            An exclusive service until the story of the writer gets accepted in
-            the online writing platform.
-          </p>
-          <div class="mycard-list mb-3">
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                unlimited outline revision for your stories
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                one-on-one meeting with the team to curate your perfect outline
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                more premium pricing tailored to your story’s requirements
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                guarantee for outline’s success in contract securing
-              </p>
-            </div>
-          </div>
-          <a
-            href="/contract/ce"
-            class="btn btn-success btn-getstarted-right me-2 mb-2"
-            >GET STARTED</a
+    </transition>
+    <transition name="service-show-v2">
+      <div
+        class="row service-card-container outline-revision container-fluid mx-0 justify-content-center"
+        v-if="!showOutline"
+      >
+        <div class="col-lg-6 col-12" id="service-card-left">
+          <div
+            id="card-left-content"
+            class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
           >
+            <h1 class="mycard-title">Contract R</h1>
+            <p class="mycard-description mb-3">
+              A one-time fee and service provided by the third-party agent to
+              the writer.
+            </p>
+            <div class="mycard-list mb-3">
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  creates your story outline in a single session
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  one-on-one meeting with the team to curate your perfect
+                  outline
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkGreen.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  budget-friendly price range based on your story needs
+                </p>
+              </div>
+              <div class="d-flex">
+                <img src="images/services/exRed.png" class="ex me-2" alt="" />
+                <p class="mycard-list-text">
+                  guarantee for outline’s success in contract securing
+                </p>
+              </div>
+            </div>
+            <a
+              href="/contract/r"
+              class="btn btn-success btn-getstarted-left me-2 mb-2"
+              >GET STARTED</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 col-12" id="service-card-right">
+          <div
+            id="card-right-content"
+            class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
+          >
+            <h1 class="mycard-title">Contract RE</h1>
+            <p class="mycard-description mb-3">
+              An exclusive service until the story of the writer gets accepted
+              in the online writing platform.
+            </p>
+            <div class="mycard-list mb-3">
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  unlimited outline revision for your stories
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  one-on-one meeting with the team to curate your perfect
+                  outline
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  more premium pricing tailored to your story’s requirements
+                </p>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="images/services/checkWhite.png"
+                  class="check me-2"
+                  alt=""
+                />
+                <p class="mycard-list-text">
+                  guarantee for outline’s success in contract securing
+                </p>
+              </div>
+            </div>
+            <a
+              href="/contract/re"
+              class="btn btn-success btn-getstarted-right me-2 mb-2"
+              >GET STARTED</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="row service-card-container outline-revision container-fluid mx-0 justify-content-center"
-      :class="{ 'not-show slide-right1': left, 'show slide-left1': right }"
-    >
-      <div class="col-lg-6 col-12" id="service-card-left">
-        <div
-          id="card-left-content"
-          class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
-        >
-          <h1 class="mycard-title">Contract R</h1>
-          <p class="mycard-description mb-3">
-            A one-time fee and service provided by the third-party agent to the
-            writer.
-          </p>
-          <div class="mycard-list mb-3">
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                creates your story outline in a single session
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                one-on-one meeting with the team to curate your perfect outline
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkGreen.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                budget-friendly price range based on your story needs
-              </p>
-            </div>
-            <div class="d-flex">
-              <img src="images/services/exRed.png" class="ex me-2" alt="" />
-              <p class="mycard-list-text">
-                guarantee for outline’s success in contract securing
-              </p>
-            </div>
-          </div>
-          <a
-            href="/contract/r"
-            class="btn btn-success btn-getstarted-left me-2 mb-2"
-            >GET STARTED</a
-          >
-        </div>
-      </div>
-      <div class="col-lg-6 col-12" id="service-card-right">
-        <div
-          id="card-right-content"
-          class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
-        >
-          <h1 class="mycard-title">Contract RE</h1>
-          <p class="mycard-description mb-3">
-            An exclusive service until the story of the writer gets accepted in
-            the online writing platform.
-          </p>
-          <div class="mycard-list mb-3">
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                unlimited outline revision for your stories
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                one-on-one meeting with the team to curate your perfect outline
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                more premium pricing tailored to your story’s requirements
-              </p>
-            </div>
-            <div class="d-flex">
-              <img
-                src="images/services/checkWhite.png"
-                class="check me-2"
-                alt=""
-              />
-              <p class="mycard-list-text">
-                guarantee for outline’s success in contract securing
-              </p>
-            </div>
-          </div>
-          <a
-            href="/contract/re"
-            class="btn btn-success btn-getstarted-right me-2 mb-2"
-            >GET STARTED</a
-          >
-        </div>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const left = ref(true);
-const right = ref(false);
-function showCreation() {
-  left.value = true;
-  right.value = false;
-}
-function showRevision() {
-  left.value = false;
-  right.value = true;
-}
+<script>
+export default {
+  data() {
+    return {
+      showOutline: true,
+      left: true,
+      righ: false,
+    };
+  },
+  methods: {
+    showCreation() {
+      this.showOutline = true;
+      this.left = true;
+      this.right = false;
+    },
+    showRevision() {
+      this.showOutline = false;
+      this.left = false;
+      this.right = true;
+    },
+  },
+};
 </script>
 <style scoped>
+#services {
+  min-height: 125vh;
+}
 .show {
   display: flex !important;
 }
@@ -396,7 +416,6 @@ function showRevision() {
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 20px !important; /* 71.429% */
-  transition: all 0.8s ease;
 }
 .service-option:hover {
   cursor: pointer;
@@ -409,11 +428,8 @@ function showRevision() {
   text-decoration-thickness: 5px !important;
 }
 .outline-revision {
-  transition: all 0.8s ease;
-  display: none;
 }
 .online-creation {
-  transition: all 0.8s ease;
 }
 .btn-getstarted-left {
   font-size: 17px;
@@ -455,6 +471,21 @@ function showRevision() {
   transform: translate(5px, -5px);
   box-shadow: -5px 5px 0px #027962;
   background-color: #ebeef2;
+}
+
+.service-show-enter-active {
+  animation: slideRight 1s;
+}
+.service-show-leave-active {
+  display: none;
+  animation: slideRight 0.5s reverse;
+}
+.service-show-v2-enter-active {
+  animation: slideLeft 1s;
+}
+.service-show-v2-leave-active {
+  display: none;
+  animation: slideLeft 0.5s reverse;
 }
 @media only screen and (max-width: 768px) {
   .services {
