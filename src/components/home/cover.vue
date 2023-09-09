@@ -48,7 +48,9 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">WRITE</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            WRITE ME AN OUTLINE
+          </h1>
           <button
             type="button"
             class="btn-close"
@@ -57,14 +59,17 @@
           ></button>
         </div>
         <div class="modal-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Exercitationem, quae. Aperiam laboriosam nemo id, sint ratione
-          corporis perferendis magnam. Velit quia sed possimus dolore. Iste
-          sequi quas veniam suscipit odit!
+          An outline is not merely a roadmap for your story; it's the backbone
+          that shapes your narrative and propels it forward. It’s not just a
+          tool for writers; it's a strategy for successfully passing the review
+          process of the editors. So, before you embark on your next writing
+          journey, remember that a well-defined outline is your most potent
+          ally. <br /><br />Uncertain about where to begin with your outline?
+          Join forces with our experts!
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-primary" id="contact-us">
-            Gaurr
+            Proceed
           </button>
         </div>
       </div>
@@ -81,7 +86,9 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Revise</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            REVISE ME AN OUTLINE
+          </h1>
           <button
             type="button"
             class="btn-close"
@@ -90,14 +97,17 @@
           ></button>
         </div>
         <div class="modal-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Exercitationem, quae. Aperiam laboriosam nemo id, sint ratione
-          corporis perferendis magnam. Velit quia sed possimus dolore. Iste
-          sequi quas veniam suscipit odit!
+          Revising the outline of your story may initially seem like a tiring
+          task, but it is a critical step on the path to writing success,
+          especially when aiming to get your story get your desired contract on
+          online writing platforms. A well-revised outline ensures that your
+          narrative is finely tuned, with a clear structure, engaging plot
+          points, and well-developed characters.<br /><br />Tired from revising
+          your outline? Collaborate with us!
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-primary" id="contact-us">
-            Gaurr
+            Proceed
           </button>
         </div>
       </div>
@@ -204,6 +214,9 @@ export default {
   background-color: #027962;
   transform: translate(5px, -5px);
   box-shadow: -5px 5px 0px #43cfb3;
+}
+.modal-body {
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 
 @media only screen and (max-width: 768px) {

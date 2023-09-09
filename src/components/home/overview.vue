@@ -9,16 +9,39 @@
 </template>
 <script>
 import Lottie from "lottie-web";
-import animationData from "@/assets/WhatIs.lottie.json"; // Replace with your animation JSON file path
+import animationData from "@/assets/WhatIs.lottie.json";
 
 export default {
+  data() {
+    return {
+      lottieInstance: null,
+      observer: null,
+    };
+  },
   mounted() {
-    this.lottieInstance = Lottie.loadAnimation({
-      container: this.$refs.lottieContainer,
-      animationData: animationData,
-      loop: false,
-      autoplay: true,
+    this.observer = new IntersectionObserver(this.handleIntersection, {
+      root: null, // Use the viewport as the root
+      rootMargin: "0px", // No additional margin
+      threshold: 0.1, // Trigger when 10% of the element is visible
     });
+
+    this.observer.observe(this.$refs.lottieContainer);
+  },
+  methods: {
+    handleIntersection(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Element is in the viewport, start the animation
+          this.lottieInstance = Lottie.loadAnimation({
+            container: this.$refs.lottieContainer,
+            animationData: animationData,
+            loop: false,
+            autoplay: true,
+          });
+          this.observer.unobserve(entry.target); // Stop observing once animation starts
+        }
+      });
+    },
   },
   beforeDestroy() {
     if (this.lottieInstance) {

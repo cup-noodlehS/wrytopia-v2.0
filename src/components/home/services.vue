@@ -77,7 +77,8 @@
               </div>
             </div>
             <a
-              href="/contract/c"
+              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
             >
@@ -137,7 +138,8 @@
               </div>
             </div>
             <a
-              href="/contract/ce"
+              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              target="_blank"
               class="btn btn-success btn-getstarted-right me-2 mb-2"
               >GET STARTED</a
             >
@@ -200,7 +202,8 @@
               </div>
             </div>
             <a
-              href="/contract/r"
+              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
             >
@@ -260,7 +263,8 @@
               </div>
             </div>
             <a
-              href="/contract/re"
+              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              target="_blank"
               class="btn btn-success btn-getstarted-right me-2 mb-2"
               >GET STARTED</a
             >
