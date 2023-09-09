@@ -1,12 +1,12 @@
 <template>
-  <div class="map-cont" ref="myElement" :class="{ 'slide-right1': slide }">
+  <div class="map-cont" :class="{ 'slide-right1': slide }">
     <div class="container-fluid map row align-items-center mx-0">
       <div class="col-lg-6 col-12">
         <div ref="lottieContainer" class="animation-cover"></div>
         <!-- <div id="animation2 container2" class="animation-cover"></div> -->
       </div>
       <div class="col-lg-6 col-12">
-        <h1>
+        <h1 ref="myElement">
           Ready to map your<br />
           story? Let's Go!
         </h1>
