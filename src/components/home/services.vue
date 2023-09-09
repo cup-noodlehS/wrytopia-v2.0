@@ -404,12 +404,12 @@ export default {
   display: inline;
 }
 .check {
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
 }
 .ex {
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
 }
 .service-option {
   color: #63727e !important;

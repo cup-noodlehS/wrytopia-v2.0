@@ -9,7 +9,6 @@
       agreement, the terms "we," "us," and "Wrytopia" all refer to this
       platform.
     </p>
-    <br />
     <p>
       Within this document, you will find the stipulations outlining how
       Wrytopia delivers its writing services via the Wrytopia website. Upon
@@ -31,7 +30,8 @@
           to act. It is important to thoroughly review this agreement and seek
           advice from your own business and legal advisors prior to using the
           services or agreeing to its terms.
-          <br /><br />
+        </p>
+        <p>
           Moreover, upon agreeing to the terms and conditions outlined in this
           document, you verify that you have comprehensively gone through and
           grasped our
@@ -42,7 +42,7 @@
           adhering to any extra policies and terms associated with the service,
           as well as any additional regulations, policies, and processes that
           might be periodically disclosed on the services. All of these are
-          considered an integral part of this agreement.<br /><br />
+          considered an integral part of this agreement.
         </p>
       </div>
       <div>
@@ -59,7 +59,6 @@
           prohibited. We reserve the right to request verification of age and
           eligibility and to suspend or terminate accounts of users who do not
           meet these requirements.
-          <br /><br />
         </p>
       </div>
       <div>
@@ -139,7 +138,6 @@
           writers, which cultivates an environment of cooperation and
           efficiency. Upholding these duties contributes significantly to
           maintaining the integrity and excellence of the services we offer.
-          <br /><br />
         </p>
       </div>
       <div>
@@ -153,7 +151,8 @@
           registered and unregistered intellectual property rights tied to these
           elements (collectively referred to as "Wrytopia Content"), are under
           the ownership, control, and/or licensing of Wrytopia.
-          <br /><br />
+        </p>
+        <p>
           Wrytopia Content is safeguarded against unauthorized utilization,
           duplication, and distribution through copyright, trademark, patent,
           and other legal frameworks, regulations, and international agreements.
@@ -165,7 +164,8 @@
           patent, and other pertinent legal guidelines and international
           agreements, potentially leading to legal consequences, both criminal
           and civil.
-          <br /><br />
+        </p>
+        <p>
           <i>Copyright</i><br />
           All texts, images, diagrams, audio, animations, and video files, along
           with their arrangements, are subject to copyright law and other
@@ -174,20 +174,25 @@
           disseminated, or otherwise shared with third parties, whether for
           commercial purposes or distribution. Similar usage on alternate
           platforms is likewise impermissible.
-          <br /><br />
+        </p>
+        <p>
           You are not permitted to download the contents of this website
           exclusively for your personal, non-commercial, private use, provided
           you adhere to all copyright, branding, and other protective statutes.
           This entails refraining from erasing or rendering inaccessible any
           pertinent information. Any alterations or utilization of the Website's
           contents for purposes other than those specified constitute a
-          violation of our rights and are explicitly prohibited.<br /><br />
+          violation of our rights and are explicitly prohibited.
+        </p>
+        <p>
           <i>Trademarks</i><br />
           If not explicitly indicated otherwise, all trademarks mentioned are
           safeguarded by Wrytopia. These are provided protection both on a
           national and international scale, and they must not be duplicated,
           copied, altered, or utilized in any alternative manner without
-          obtaining the express prior authorization of Wrytopia.<br /><br />
+          obtaining the express prior authorization of Wrytopia.
+        </p>
+        <p>
           Moreover, other designations, logos, product and service titles,
           designs, images, and catchphrases mentioned or visible belong to the
           trademarks of their respective proprietors. Using any such
@@ -198,28 +203,30 @@
           proprietary assets enjoy protection under national and international
           legal frameworks and are not to be reproduced, copied, modified,
           posted, or utilized in any form or manner without securing the express
-          prior written consent of Wrytopia.<br /><br />
+          prior written consent of Wrytopia.
         </p>
       </div>
       <div>
         <li class="bold">Effectivity</li>
-        The duration of this agreement will commence upon your initial access or
-        utilization of the service, or upon your explicit acceptance of this
-        agreement. This arrangement will remain in effect until terminated by
-        either party – yourself or us. The termination shall be executed through
-        a written notice with a duration of twenty-four (24) hours. If the
-        notice is initiated by Wrytopia, it shall be dispatched to the last
-        email address you provided to Wrytopia. If the notice is initiated by
-        you to Wrytopia, it must be sent exclusively to the following email
-        address:
-        <a
-          href="mailto: team.wrytopia@gmail.com"
-          class="link-success"
-          target="_blank"
-          >team.wrytopia@gmail.com</a
-        >, including the following particulars: (i) your username; (ii) the
-        email address you provided to us; and (iii) "Termination of Service
-        Agreement" in the email's subject line.<br /><br />
+        <p>
+          The duration of this agreement will commence upon your initial access
+          or utilization of the service, or upon your explicit acceptance of
+          this agreement. This arrangement will remain in effect until
+          terminated by either party – yourself or us. The termination shall be
+          executed through a written notice with a duration of twenty-four (24)
+          hours. If the notice is initiated by Wrytopia, it shall be dispatched
+          to the last email address you provided to Wrytopia. If the notice is
+          initiated by you to Wrytopia, it must be sent exclusively to the
+          following email address:
+          <a
+            href="mailto: team.wrytopia@gmail.com"
+            class="link-success"
+            target="_blank"
+            >team.wrytopia@gmail.com</a
+          >, including the following particulars: (i) your username; (ii) the
+          email address you provided to us; and (iii) "Termination of Service
+          Agreement" in the email's subject line.
+        </p>
       </div>
       <div>
         <li class="bold">Services Offered</li>
@@ -246,7 +253,6 @@
           unique demands. We stand by our commitment to guarantee the success of
           your outline in securing contracts, making Contract CE an ideal choice
           for writers aiming for excellence in the online writing world.
-          <br /><br />
         </p>
       </div>
       <div>
@@ -254,7 +260,7 @@
         <p>
           These terms are governed by the laws of the country in which you
           reside, and you retain the option to initiate legal actions in the
-          courts of your local jurisdiction.<br /><br />
+          courts of your local jurisdiction.
         </p>
       </div>
       <div>
@@ -273,7 +279,7 @@
           your responsibility to assess the content's suitability and accuracy
           for your intended purpose. Through this provision, we aim to be
           transparent about the parameters of our service, while emphasizing the
-          importance of informed decision-making on your part.<br /><br />
+          importance of informed decision-making on your part.
         </p>
       </div>
       <div>
@@ -309,7 +315,7 @@
           features, or specific content. You accept and acknowledge that in the
           event of your account's termination or the termination of these Terms,
           the license provided to you concerning the Services will automatically
-          expire.<br /><br />
+          expire.
         </p>
       </div>
       <div>
@@ -327,7 +333,7 @@
           ultimate decisions and actions based on the content are your sole
           responsibility. This section underscores our commitment to
           transparency and empowers you with the knowledge to make informed
-          choices when utilizing our services.<br /><br />
+          choices when utilizing our services.
         </p>
       </div>
       <div>
@@ -344,7 +350,7 @@
           payments for completed work shall remain due even after termination.
           This portion of our Terms and Conditions reinforces our commitment to
           maintaining a professional and ethical relationship, while clarifying
-          the mechanisms for concluding our engagement, if necessary.<br /><br />
+          the mechanisms for concluding our engagement, if necessary.
         </p>
       </div>
       <div>
@@ -370,7 +376,6 @@
           bounds. Through this clause, we affirm our commitment to transparency,
           while delineating the shared responsibilities in our client-provider
           relationship.
-          <br /><br />
         </p>
       </div>
       <div>
@@ -387,7 +392,6 @@
           your engagement with Wrytopia. Through this provision, we demonstrate
           our commitment to transparency and the seamless evolution of our
           client-provider relationship.
-          <br /><br />
         </p>
       </div>
       <div>
@@ -397,7 +401,7 @@
           any provision of the Terms is deemed invalid, unlawful, or
           unenforceable, all other provisions will remain fully valid and
           effective. This "Severability" clause remains applicable even after
-          the services have expired or been terminated.<br /><br />
+          the services have expired or been terminated.
         </p>
       </div>
       <div>
@@ -410,7 +414,7 @@
           precedence over any terms or conditions you may include in documents
           or communications with us, irrespective of whether Wrytopia signs them
           or refrains from objecting. This "Entire Agreement" provision remains
-          applicable even after the Services have expired or been terminated.<br /><br />
+          applicable even after the Services have expired or been terminated.
         </p>
       </div>
       <div>
@@ -422,7 +426,7 @@
           these Terms, or any delay in initiating actions against you for
           violating these Terms, shall not imply your exemption from fulfilling
           those obligations. Nor will it hinder us from pursuing actions against
-          you at a later time.<br /><br />
+          you at a later time.
         </p>
       </div>
       <div>
@@ -452,7 +456,6 @@
           content. The availability of these functions and links to third-party
           sites is contingent on any additional Terms provided by us concerning
           these functions.
-          <br /><br />
         </p>
       </div>
       <div>

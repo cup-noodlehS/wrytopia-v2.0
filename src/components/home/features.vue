@@ -1,8 +1,9 @@
 <template>
   <div
     class="d-flex flex-wrap features justify-content-center container-fluid align-items-center mb-5"
+    id="features"
   >
-    <div class="features-text">
+    <div class="features-text" ref="myElement">
       <p id="features-header">FEATURES</p>
       <h1 id="features-line" class="mb-3">
         Your outlines, <span class="idk">perfected</span>
@@ -14,10 +15,35 @@
       </p>
     </div>
     <div>
-      <img src="images/features.svg" alt="" id="features-img" />
+      <img
+        src="images/features.svg"
+        ref="yourElement"
+        alt=""
+        id="features-img"
+      />
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      observer: null,
+    };
+  },
+  mounted() {
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.$refs.myElement.classList.add("slide-right1");
+          this.$refs.yourElement.classList.add("slide-left1");
+        }
+      });
+    });
+    this.observer.observe(this.$refs.myElement);
+  },
+};
+</script>
 <style scoped>
 .features {
   padding: 108px;

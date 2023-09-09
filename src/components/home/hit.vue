@@ -1,20 +1,29 @@
 <template>
   <div class="container-fluid hit pt-3" id="hit" ref="hit">
     <center>
-      <h1 id="hit-title" class="slide-down1 delay4">HOW IT WORKS</h1>
+      <h1 id="hit-title" class="delay4" :class="{ 'slide-left1': slideleft }">
+        HOW IT WORKS
+      </h1>
     </center>
     <center>
-      <h1 id="hit-title2">
+      <h1
+        id="hit-title2"
+        :class="{ 'slide-right1': slideleft }"
+        ref="myElement"
+      >
         Your path to <span class="idk">perfect outlines</span>
       </h1>
     </center>
     <center>
-      <p id="hit-p">
+      <p id="hit-p" :class="{ 'slide-down1': slideleft }">
         By following the step-by-step guide below, you will unlock global
         opportunities for your story with Wrytopia’s expert writing services.
       </p>
     </center>
-    <div class="d-flex flex-wrap justify-content-center">
+    <div
+      class="d-flex flex-wrap justify-content-center delay-4"
+      :class="{ 'slide-up1': slideleft }"
+    >
       <div class="card text-center m-3" style="width: 18rem">
         <div class="card-body d-flex flex-column justify-content-between">
           <div>
@@ -54,6 +63,26 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      observer: null,
+      slideleft: false,
+    };
+  },
+  mounted() {
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.slideleft = true;
+        }
+      });
+    });
+    this.observer.observe(this.$refs.myElement);
+  },
+};
+</script>
 <style scoped>
 .hit {
   padding-left: 50px;

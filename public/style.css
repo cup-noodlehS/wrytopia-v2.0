@@ -56,6 +56,16 @@
     transform: translateY(0);
   }
 }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .fade1 {
   animation: fadeKey 3s;
 }
@@ -86,6 +96,9 @@
 .slide-down1 {
   animation: slideDown 1.5s;
 }
+.slide-up1 {
+  animation: slideUp 1.5s;
+}
 .hover-lift {
   transition: all 0.3s ease !important;
 }
@@ -111,7 +124,14 @@ header {
   padding-top: 105px;
   min-height: 100vh !important;
   width: 100% !important;
-  background-color: #f2fbf9;
+  background-color: #e1f4f0;
+}
+.cover {
+  background: url("./images/coverbgwhite.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .modal-body {
