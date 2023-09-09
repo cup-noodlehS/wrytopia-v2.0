@@ -2,7 +2,9 @@
   <footer>
     <div class="container-fluid d-flex foot justify-content-between">
       <div class="mx-4 mb-3">
-        <img src="images/wrytopia.svg" class="mb-3" alt="" />
+        <a href="/#">
+          <img src="images/wrytopia.svg" class="mb-3" alt="" />
+        </a>
         <div class="">
           <p>Copyright © 2023</p>
           <p>Wrytopia | All Rights Reserved</p>
