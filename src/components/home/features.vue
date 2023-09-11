@@ -2,8 +2,9 @@
   <div
     class="d-flex flex-wrap features justify-content-center container-fluid align-items-center mb-5"
     id="features"
+    :class="{ show: slide }"
   >
-    <div class="features-text" ref="myElement">
+    <div class="features-text delay4" ref="myElement">
       <p id="features-header">FEATURES</p>
       <h1 id="features-line" class="mb-3">
         Your outlines, <span class="idk">perfected</span>
@@ -20,6 +21,7 @@
         ref="yourElement"
         alt=""
         id="features-img"
+        class="delay4"
       />
     </div>
   </div>
@@ -29,6 +31,7 @@ export default {
   data() {
     return {
       observer: null,
+      slide: false,
     };
   },
   mounted() {
@@ -37,6 +40,7 @@ export default {
         if (entry.isIntersecting) {
           this.$refs.myElement.classList.add("slide-right1");
           this.$refs.yourElement.classList.add("slide-left1");
+          this.slide = true;
         }
       });
     });
@@ -47,6 +51,7 @@ export default {
 <style scoped>
 .features {
   padding: 108px;
+  opacity: 0;
 }
 
 #features-header {
@@ -79,6 +84,9 @@ export default {
 }
 #features-img {
   width: 100%;
+}
+.show {
+  opacity: 1;
 }
 @media only screen and (max-width: 768px) {
   .features {

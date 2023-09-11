@@ -1,5 +1,10 @@
 <template>
-  <div class="container-fluid hit pt-3" id="hit" ref="hit">
+  <div
+    class="container-fluid hit pt-3"
+    id="hit"
+    ref="hit"
+    :class="{ show: slideleft }"
+  >
     <center>
       <h1 id="hit-title" class="delay4" :class="{ 'slide-left1': slideleft }">
         HOW IT WORKS
@@ -87,6 +92,7 @@ export default {
 .hit {
   padding-left: 50px;
   padding-right: 50px;
+  opacity: 0;
 }
 #hit-title {
   font-family: clashDisplayMedium !important;
@@ -141,6 +147,9 @@ export default {
   background-color: #d0f4ec;
   transform: translate(5px, -5px);
   box-shadow: -5px 5px 0px #00b18f;
+}
+.show {
+  opacity: 1;
 }
 @media only screen and (max-width: 768px) {
   .hit {

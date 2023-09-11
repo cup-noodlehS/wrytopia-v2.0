@@ -1,5 +1,5 @@
 <template>
-  <div class="map-cont" :class="{ 'slide-right1': slide }">
+  <div class="map-cont" :class="{ 'slide-right1 show': slide }">
     <div class="container-fluid map row align-items-center mx-0">
       <div class="col-lg-6 col-12">
         <div ref="lottieContainer" class="animation-cover"></div>
@@ -53,6 +53,7 @@ export default {
 <style scoped>
 .map-cont {
   width: 100% !important;
+  opacity: 0;
   height: 500px;
 }
 
@@ -93,6 +94,9 @@ export default {
   transform: translate(-5px, -5px);
   background-color: white !important;
   box-shadow: 5px 5px 0px #01382d;
+}
+.show {
+  opacity: 1;
 }
 @media only screen and (max-width: 768px) {
   .map {
