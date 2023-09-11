@@ -10,7 +10,10 @@
           Ready to map your<br />
           story? Let's Go!
         </h1>
-        <a href="#services-sub" class="btn btn-light btn-map me-2 mb-2 mt-3"
+        <a
+          href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+          class="btn btn-light btn-map me-2 mb-2 mt-3"
+          target="_blank"
           >SCHEDULE AN APPOINTMENT</a
         >
       </div>
