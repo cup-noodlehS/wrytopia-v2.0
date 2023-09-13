@@ -230,9 +230,12 @@ export default {
   border-color: #00b18f !important;
 }
 .navshow-enter-active {
+  animation-delay: 3s;
+
   animation: slideDown 1.5s;
 }
 .navshow-leave-active {
+  animation-delay: 2s;
   animation: slideDown 1s reverse;
 }
 .conts {
