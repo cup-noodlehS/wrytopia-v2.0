@@ -29,7 +29,7 @@
       class="d-flex flex-wrap justify-content-center delay-4"
       :class="{ 'slide-up1': slideleft }"
     >
-      <div class="card text-center m-3" style="width: 18rem">
+      <div class="card text-center m-3" style="width: 16rem">
         <div class="card-body d-flex flex-column justify-content-between">
           <div>
             <img src="images/hitImg1.svg" class="m-3" alt="" />
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="card text-center m-3" style="width: 18rem">
+      <div class="card text-center m-3" style="width: 16rem">
         <div class="card-body d-flex flex-column justify-content-between">
           <div>
             <img src="images/hitImg2.svg" class="m-3" alt="" />
@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="card text-center m-3" style="width: 18rem">
+      <div class="card text-center m-3" style="width: 16rem">
         <div class="card-body d-flex flex-column justify-content-between">
           <div>
             <img src="images/hitImg3.svg" class="m-3" alt="" />
