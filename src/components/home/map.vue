@@ -26,7 +26,7 @@ import animationData from "@/assets/pen.json";
 export default {
   data() {
     return {
-      slide: false,
+      slide: true,
     };
   },
   mounted() {
@@ -37,14 +37,14 @@ export default {
       autoplay: true, // Autoplay the animation
     });
 
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.slide = true;
-        }
-      });
-    });
-    this.observer.observe(this.$refs.myElement);
+    // this.observer = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       this.slide = true;
+    //     }
+    //   });
+    // });
+    // this.observer.observe(this.$refs.myElement);
   },
   beforeDestroy() {
     if (this.lottieInstance) {

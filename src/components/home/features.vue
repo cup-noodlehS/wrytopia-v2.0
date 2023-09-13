@@ -31,21 +31,21 @@ export default {
   data() {
     return {
       observer: null,
-      slide: false,
+      slide: true,
     };
   },
-  mounted() {
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.$refs.myElement.classList.add("slide-right1");
-          this.$refs.yourElement.classList.add("slide-left1");
-          this.slide = true;
-        }
-      });
-    });
-    this.observer.observe(this.$refs.myElement);
-  },
+  // mounted() {
+  //   this.observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         this.$refs.myElement.classList.add("slide-right1");
+  //         this.$refs.yourElement.classList.add("slide-left1");
+  //         this.slide = true;
+  //       }
+  //     });
+  //   });
+  //   this.observer.observe(this.$refs.myElement);
+  // },
 };
 </script>
 <style scoped>

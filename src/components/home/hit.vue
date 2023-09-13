@@ -73,19 +73,19 @@ export default {
   data() {
     return {
       observer: null,
-      slideleft: false,
+      slideleft: true,
     };
   },
-  mounted() {
-    this.observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          this.slideleft = true;
-        }
-      });
-    });
-    this.observer.observe(this.$refs.myElement);
-  },
+  // mounted() {
+  //   this.observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         this.slideleft = true;
+  //       }
+  //     });
+  //   });
+  //   this.observer.observe(this.$refs.myElement);
+  // },
 };
 </script>
 <style scoped>
