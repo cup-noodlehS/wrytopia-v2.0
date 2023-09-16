@@ -199,6 +199,7 @@ export default {
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: 30px !important;
+  color: #63727e !important;
 }
 
 .btn-write {
