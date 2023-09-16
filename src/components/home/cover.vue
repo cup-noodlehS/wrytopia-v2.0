@@ -3,7 +3,10 @@
     <div
       class="cover-tagline mb-1 pb-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-right1 delay1"
     >
-      <div id="tagline" class="d-flex flex-column justify-content-start">
+      <div
+        id="tagline"
+        class="d-flex flex-column justify-content-start align-items-center"
+      >
         <h1 class="mb-3">Empowering Authors, Framing Stories</h1>
         <p class="mb-3">
           Wrytopia is a reliable third-party agent committed to assisting global
@@ -16,7 +19,7 @@
           v-if="screenWidth < 768"
         ></div>
         <div
-          class="tagline-buttons container-fluid d-flex justify-content-start p-0"
+          class="tagline-buttons container-fluid d-flex justify-content-center p-0"
         >
           <a
             href=""
@@ -252,7 +255,7 @@ export default {
     height: 380px;
   }
   #tagline h1 {
-    font-size: 30px !important;
+    font-size: 28px !important;
     text-align: center;
     line-height: 40px !important;
   }

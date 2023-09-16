@@ -2,14 +2,24 @@
   <div class="map-cont" :class="{ 'slide-right1 show': slide }">
     <div class="container-fluid map row align-items-center mx-0">
       <div class="col-lg-6 col-12">
-        <div ref="lottieContainer" class="animation-cover"></div>
+        <div
+          ref="lottieContainer"
+          class="animation-cover"
+          v-if="screenWidth > 768"
+        ></div>
         <!-- <div id="animation2 container2" class="animation-cover"></div> -->
       </div>
-      <div class="col-lg-6 col-12">
+      <div class="col-lg-6 col-12 p-0">
         <h1 ref="myElement">
           Ready to map your<br />
           story? Let's Go!
         </h1>
+        <div
+          ref="lottieContainer"
+          class="animation-cover"
+          v-if="screenWidth < 768"
+        ></div>
+
         <a
           href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
           class="btn btn-light btn-map me-2 mb-2 mt-3"
@@ -27,6 +37,7 @@ export default {
   data() {
     return {
       slide: true,
+      screenWidth: window.innerWidth,
     };
   },
   mounted() {
@@ -37,6 +48,8 @@ export default {
       autoplay: true, // Autoplay the animation
     });
 
+    window.addEventListener("resize", this.handleResize);
+
     // this.observer = new IntersectionObserver((entries) => {
     //   entries.forEach((entry) => {
     //     if (entry.isIntersecting) {
@@ -45,6 +58,14 @@ export default {
     //   });
     // });
     // this.observer.observe(this.$refs.myElement);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.screenWidth = window.innerWidth;
+    },
   },
   beforeDestroy() {
     if (this.lottieInstance) {
@@ -82,7 +103,7 @@ export default {
   line-height: 66px !important;
 }
 .btn-map {
-  font-size: 17px;
+  font-size: 15px;
   min-width: 150px;
   font-family: clashDisplayMedium !important;
   background-color: white;
@@ -103,11 +124,12 @@ export default {
 }
 @media only screen and (max-width: 768px) {
   .map {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 70px;
+    padding: 48px 20px;
     text-align: center;
+  }
+  .map div h1 {
+    font-size: 28px !important;
+    line-height: 30px !important;
   }
 }
 </style>

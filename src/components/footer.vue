@@ -3,9 +3,9 @@
     <div class="container-fluid d-flex foot justify-content-between">
       <div class="mx-4 mb-3">
         <a href="/#">
-          <img src="images/wrytopia.svg" class="mb-3" alt="" />
+          <img src="images/nav-logo.svg" class="mb-3" alt="" />
         </a>
-        <div class="">
+        <div v-if="screenWidth > 768">
           <p>Copyright © 2023</p>
           <p>Wrytopia | All Rights Reserved</p>
         </div>
@@ -86,7 +86,7 @@
           >Refund Policy</a
         >
       </div>
-      <div class="mx-4">
+      <div class="mx-4" v-if="screenWidth > 768">
         <h5>FOLLOW US</h5>
         <a
           href="https://www.facebook.com/cale.nina.1"
@@ -173,17 +173,125 @@
           >Medium</a
         > -->
       </div>
+      <div v-if="screenWidth < 768" class="text-center mb-3" id="icons">
+        <a
+          href="https://www.facebook.com/cale.nina.1"
+          target="_blank"
+          class="text-decoration-none"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+          >
+            <rect
+              width="24"
+              height="24"
+              transform="translate(0.85495 0.5)"
+              fill="white"
+            />
+            <rect
+              x="0.85495"
+              y="0.5"
+              width="24"
+              height="24"
+              rx="5"
+              fill="#F2F1FA"
+            />
+            <path
+              d="M13.8309 18.5V13.0262H15.7606L16.0496 10.893H13.8308V9.53102C13.8308 8.9134 14.0109 8.49252 14.9412 8.49252L16.1277 8.49199V6.58405C15.9225 6.5581 15.2181 6.5 14.3988 6.5C12.6881 6.5 11.517 7.49412 11.517 9.31982V10.893H9.58221V13.0262H11.517V18.4999L13.8309 18.5Z"
+              fill="#63727e"
+            /></svg
+        ></a>
+        <a href="#" class="text-decoration-none"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+          >
+            <rect
+              x="0.85495"
+              y="0.5"
+              width="24"
+              height="24"
+              rx="5"
+              fill="#F2F1FA"
+            />
+            <path
+              d="M6.85495 8.11321C6.85495 7.7284 6.99009 7.41094 7.26036 7.16082C7.53062 6.9107 7.88198 6.78564 8.31441 6.78564C8.73912 6.78564 9.08275 6.90877 9.3453 7.15505C9.61556 7.40902 9.7507 7.73994 9.7507 8.14784C9.7507 8.51725 9.61943 8.82508 9.35688 9.07136C9.08661 9.32533 8.7314 9.45231 8.29124 9.45231H8.27966C7.85495 9.45231 7.51132 9.32533 7.24877 9.07136C6.98622 8.81739 6.85495 8.498 6.85495 8.11321ZM7.00553 18.2142V10.5028H9.57696V18.2142H7.00553ZM11.0017 18.2142H13.5731V13.9083C13.5731 13.6389 13.604 13.4311 13.6658 13.2849C13.7739 13.0233 13.938 12.802 14.158 12.6211C14.3781 12.4403 14.6542 12.3499 14.9862 12.3499C15.8511 12.3499 16.2835 12.9309 16.2835 14.093V18.2142H18.8549V13.7929C18.8549 12.6538 18.5847 11.79 18.0441 11.2012C17.5036 10.6125 16.7893 10.3181 15.9013 10.3181C14.9051 10.3181 14.1291 10.7452 13.5731 11.5995V11.6226H13.5615L13.5731 11.5995V10.5028H11.0017C11.0171 10.7491 11.0248 11.5148 11.0248 12.8001C11.0248 14.0853 11.0171 15.89 11.0017 18.2142Z"
+              fill="#63727e"
+            /></svg
+        ></a>
+        <a href="#" class="text-decoration-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="37"
+            viewBox="0 0 36 37"
+            fill="none"
+          >
+            <rect y="0.165527" width="36" height="36" rx="8" fill="#E7E6F2" />
+            <path
+              d="M32 18.1655C32 21.8655 31.4 24.8655 30.6 24.8655C29.8 24.8655 29.2 21.8655 29.2 18.1655C29.2 14.4655 29.8 11.4655 30.6 11.4655C31.4 11.4655 32 14.4655 32 18.1655ZM28.5 18.1655C28.5 22.2655 26.7 25.6655 24.6 25.6655C22.5 25.6655 20.7 22.2655 20.7 18.1655C20.7 14.0655 22.5 10.6655 24.6 10.6655C26.7 10.6655 28.5 14.0655 28.5 18.1655ZM19.8 18.1655C19.8 22.5655 16.3 26.1655 11.9 26.1655C7.5 26.1655 4 22.5655 4 18.1655C4 13.7655 7.5 10.1655 11.9 10.1655C16.3 10.1655 19.8 13.7655 19.8 18.1655Z"
+              fill="#8D8BA7"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div v-if="screenWidth < 768">
+      <hr />
+      <p>Copyright © 2023</p>
+      <p>Wrytopia | All Rights Reserved</p>
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      screenWidth: window.innerWidth,
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.screenWidth = window.innerWidth;
+    },
+  },
+};
+</script>
+
 <style scoped>
+hr {
+  color: #d4d2e3 !important;
+}
+#icons {
+  width: 100% !important;
+}
+#icons a {
+  display: inline !important;
+  margin: 0 5px;
+}
+#icons svg {
+  width: 36px;
+  height: 36px;
+}
 footer {
   background-color: white;
   padding-left: 108px !important;
   padding-right: 108px !important;
   padding-top: 54px !important;
   padding-bottom: 54px !important;
-  margin-top: 100px;
   gap: 10px;
 }
 footer h5 {

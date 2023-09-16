@@ -48,7 +48,8 @@
             <img src="images/hitImg2.svg" class="m-3" alt="" />
             <h5 class="card-title">Step 2</h5>
             <p class="card-text mb-3">
-              Reviewing and signing of contract via DocuSign platform
+              Together with our finance team, you will review and sign the
+              contract via DocuSign platform.
             </p>
           </div>
         </div>
@@ -59,8 +60,9 @@
             <img src="images/hitImg3.svg" class="m-3" alt="" />
             <h5 class="card-title">Step 3</h5>
             <p class="card-text mb-3">
-              Content team will collaborate with the writer's needs to create
-              the outline. Then, the writer will finally submit to the platform.
+              Lastly, the content team will collaborate with you to create
+              and/or revise your story outline until you submitted the story to
+              the writing platform
             </p>
           </div>
         </div>
@@ -155,11 +157,23 @@ export default {
   .hit {
     padding: 20px;
   }
-  #hit-title2 {
-    font-size: 2.5rem !important;
+  #hit-title {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  #hit-title2,
+  .idk {
+    font-size: 28px !important;
+    line-height: 30px !important;
   }
   #hit-p {
+    font-size: 14px !important;
+    line-height: 24px !important;
     width: 93%;
+  }
+  .card-text {
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
 }
 </style>

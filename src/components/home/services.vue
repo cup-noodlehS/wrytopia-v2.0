@@ -1,12 +1,15 @@
 <template>
-  <div class="services mb-5 pt-3" id="services">
+  <div
+    class="services mb-5 pt-3 d-flex flex-column align-items-center"
+    id="services"
+  >
     <center><h1 id="services-title">SERVICES</h1></center>
     <center>
       <h1 id="services-sub" class="px-1">Choose a contract that suits you</h1>
     </center>
-    <div class="container-fluid row my-3 p-0 justify-content-center">
+    <div class="container-fluid row mb-3 p-0 justify-content-center">
       <div
-        class="col-md-6 col-12 my-4 text-center service-option"
+        class="col-6 my-4 text-center service-option"
         id="creation-btn"
         @click="showCreation()"
         :class="{ 'service-active': left }"
@@ -14,7 +17,7 @@
         Outline Creation
       </div>
       <div
-        class="col-md-6 col-12 my-4 text-center service-option"
+        class="col-6 my-4 text-center service-option"
         id="revision-btn"
         @click="showRevision()"
         :class="{ 'service-active': right }"
@@ -506,7 +509,20 @@ export default {
     justify-content: center !important;
   }
   #services-sub {
-    font-size: 2rem !important;
+    font-size: 28px !important;
+    line-height: 30px !important;
+  }
+  #services-title {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .service-option {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .btn-getstarted-left,
+  .btn-getstarted-right {
+    width: 100% !important;
   }
 }
 </style>

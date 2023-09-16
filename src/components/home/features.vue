@@ -55,6 +55,7 @@ export default {
 }
 
 #features-header {
+  color: var(--Gray, #63727e) !important;
   font-family: clashDisplayMedium !important;
   font-size: 28px !important;
   font-style: normal !important;
@@ -66,6 +67,14 @@ export default {
 #features-line {
   color: black !important;
   font-family: clashDisplayMedium !important;
+  font-size: 56px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 66px !important;
+}
+.idk {
+  font-family: clashDisplayMedium !important;
+  color: #00b18f;
   font-size: 56px !important;
   font-style: normal !important;
   font-weight: 600 !important;
@@ -91,10 +100,20 @@ export default {
 @media only screen and (max-width: 768px) {
   .features {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
   }
-  #features-line {
-    font-size: 2.5rem !important;
+  #features-header {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  #features-line,
+  .idk {
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  #features-content {
+    font-size: 14px !important;
+    line-height: 24px !important;
   }
 }
 @media only screen and (max-width: 1200px) {
