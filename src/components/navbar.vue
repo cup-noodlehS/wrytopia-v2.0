@@ -247,7 +247,8 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #logo {
-    width: 250px !important;
+    width: 150px !important;
+    margin-left: 20px;
   }
   .nav-pad {
     padding-left: 10px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="cover row m-0 overflow-hidden">
+  <div class="cover row overflow-hidden m-0">
     <div
       class="cover-tagline mb-1 pb-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-right1 delay1"
     >
@@ -10,6 +10,11 @@
           English writers by providing high-quality writing services that pave
           the way for your writing carer.
         </p>
+        <div
+          ref="lottieContainer"
+          class="animation-cover"
+          v-if="screenWidth < 768"
+        ></div>
         <div
           class="tagline-buttons container-fluid d-flex justify-content-start p-0"
         >
@@ -34,7 +39,11 @@
       class="cover-img px-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-left1 delay4"
     >
       <!-- <div id="animation1 container1" class="animation-cover"></div> -->
-      <div ref="lottieContainer" class="animation-cover"></div>
+      <div
+        ref="lottieContainer"
+        class="animation-cover"
+        v-if="screenWidth > 768"
+      ></div>
     </div>
   </div>
 
@@ -119,6 +128,11 @@ import Lottie from "lottie-web";
 import animationData from "@/assets/Hero.lottie.json"; // Replace with your animation JSON file path
 
 export default {
+  data() {
+    return {
+      screenWidth: window.innerWidth,
+    };
+  },
   mounted() {
     this.lottieInstance = Lottie.loadAnimation({
       container: this.$refs.lottieContainer,
@@ -126,6 +140,15 @@ export default {
       loop: true,
       autoplay: true,
     });
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.screenWidth = window.innerWidth;
+    },
   },
   beforeDestroy() {
     if (this.lottieInstance) {
@@ -151,10 +174,10 @@ export default {
 .cover {
   width: 100%;
   min-height: 83.5vh;
-  padding-left: 7%;
-  padding-right: 7%;
   padding-top: 3%;
   padding-bottom: 1%;
+  padding-left: 108px;
+  padding-right: 108px;
 }
 .cover-img img {
   height: 500px;
@@ -220,15 +243,22 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+  .cover {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 20px !important;
+  }
   .cover-img img {
     height: 380px;
   }
   #tagline h1 {
-    font-size: 2rem !important;
+    font-size: 30px !important;
     text-align: center;
+    line-height: 40px !important;
   }
   #tagline p {
     text-align: center;
+    color: var(--Gray, #63727e) !important;
   }
 
   .tagline-buttons {
