@@ -15,14 +15,78 @@
         your writing aspirations into a successful writing journey.
       </p>
     </div>
-    <div>
-      <img
-        src="images/features.svg"
-        ref="yourElement"
-        alt=""
-        id="features-img"
-        class="delay4"
-      />
+    <div ref="yourElement">
+      <table id="features-img" class="delay4">
+        <tr>
+          <td @mouseover="featureHover(0)" @mouseleave="featureOut(0)">
+            <center>
+              <Transition name="feature-show">
+                <img
+                  src="images/features/feature1.svg"
+                  alt=""
+                  v-if="showFeature[0]"
+                />
+                <p v-else>
+                  At Wrytopia, we understand authors' needs intimately. Our
+                  skilled team crafts high-quality content tailored to your
+                  unique voice and style. We have types of contract depending on
+                  your needs.
+                </p>
+              </Transition>
+            </center>
+          </td>
+          <td @mouseover="featureHover(1)" @mouseleave="featureOut(1)">
+            <center>
+              <Transition name="feature-show">
+                <img
+                  src="images/features/feature2.svg"
+                  v-if="showFeature[1]"
+                  alt=""
+                />
+                <p v-else>
+                  Whether you're refining an existing outline or creating one
+                  from scratch, Wrytopia's experts curate outlines that lay the
+                  foundation for a captivating story. From settings, characters,
+                  plot, and planning the reference chapters of the story.
+                </p>
+              </Transition>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td @mouseover="featureHover(2)" @mouseleave="featureOut(2)">
+            <center>
+              <Transition name="feature-show">
+                <img
+                  src="images/features/feature3.svg"
+                  v-if="showFeature[2]"
+                  alt=""
+                />
+                <p v-else>
+                  At Wrytopia, our commitment to ethics and integrity ensures
+                  that we craft original story outlines without relying on AI
+                  tools.
+                </p>
+              </Transition>
+            </center>
+          </td>
+          <td @mouseover="featureHover(3)" @mouseleave="featureOut(3)">
+            <center>
+              <Transition name="feature-show">
+                <img
+                  src="images/features/feature4.svg"
+                  v-if="showFeature[3]"
+                  alt=""
+                />
+                <p v-else>
+                  Our top priority is delivering prompt and efficient service to
+                  finalize your story outline.
+                </p>
+              </Transition>
+            </center>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -32,7 +96,16 @@ export default {
     return {
       observer: null,
       slide: true,
+      showFeature: [true, true, true, true],
     };
+  },
+  methods: {
+    featureHover(i) {
+      this.showFeature[i] = false;
+    },
+    featureOut(i) {
+      this.showFeature[i] = true;
+    },
   },
   // mounted() {
   //   this.observer = new IntersectionObserver((entries) => {
@@ -49,6 +122,47 @@ export default {
 };
 </script>
 <style scoped>
+td {
+  width: 340px;
+  height: 250px;
+}
+td p {
+  color: #63727e !important;
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 30px !important;
+}
+td:hover {
+  cursor: pointer;
+}
+td img {
+  width: 70%;
+}
+#features-img {
+  border-collapse: collapse; /* This property collapses the table borders */
+}
+
+#features-img td {
+  border: 1px solid #000; /* Add a 1px solid border to each cell */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+#features-img tr:first-child td {
+  border-top: none; /* Remove the top border for the first row */
+}
+
+#features-img tr:last-child td {
+  border-bottom: none; /* Remove the bottom border for the last row */
+}
+
+#features-img tr td:first-child {
+  border-left: none; /* Remove the left border for the first column */
+}
+
+#features-img tr td:last-child {
+  border-right: none; /* Remove the right border for the last column */
+}
 .features {
   padding: 108px;
   opacity: 0;
@@ -97,6 +211,14 @@ export default {
 .show {
   opacity: 1;
 }
+
+.feature-show-enter-active {
+  animation: fadeKey 1s;
+}
+.feature-show-leave-active {
+  display: none;
+  animation: fadeKey 3s reverse;
+}
 @media only screen and (max-width: 768px) {
   .features {
     text-align: center;
@@ -111,7 +233,8 @@ export default {
     font-size: 25px !important;
     line-height: 30px !important;
   }
-  #features-content {
+  #features-content,
+  td p {
     font-size: 14px !important;
     line-height: 24px !important;
   }

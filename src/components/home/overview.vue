@@ -73,4 +73,10 @@ export default {
   line-height: 20px !important; /* 71.429% */
   letter-spacing: 2.8px !important;
 }
+@media only screen and (max-width: 768px) {
+  #wiw-title {
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+}
 </style>
