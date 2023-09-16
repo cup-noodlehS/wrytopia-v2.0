@@ -127,7 +127,7 @@ header {
   background-color: #e1f4f0;
 }
 .cover {
-  background: url("./images/coverbgwhite.svg");
+  /* background: url("./images/coverbgwhite.svg"); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
