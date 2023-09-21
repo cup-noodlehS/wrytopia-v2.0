@@ -10,12 +10,14 @@
 <script>
 import Lottie from "lottie-web";
 import animationData from "@/assets/WhatIs.lottie.json";
+import mobileAnimationData from "@/assets/mobileWhatIs.json";
 
 export default {
   data() {
     return {
       lottieInstance: null,
       observer: null,
+      screenWidth: window.innerWidth,
     };
   },
   mounted() {
@@ -26,21 +28,37 @@ export default {
     });
 
     this.observer.observe(this.$refs.lottieContainer);
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
   },
   methods: {
     handleIntersection(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Element is in the viewport, start the animation
-          this.lottieInstance = Lottie.loadAnimation({
-            container: this.$refs.lottieContainer,
-            animationData: animationData,
-            loop: false,
-            autoplay: true,
-          });
+          if (this.screenWidth > 768) {
+            this.lottieInstance = Lottie.loadAnimation({
+              container: this.$refs.lottieContainer,
+              animationData: animationData,
+              loop: false,
+              autoplay: true,
+            });
+          } else {
+            this.lottieInstance = Lottie.loadAnimation({
+              container: this.$refs.lottieContainer,
+              animationData: mobileAnimationData,
+              loop: false,
+              autoplay: true,
+            });
+          }
           this.observer.unobserve(entry.target); // Stop observing once animation starts
         }
       });
+    },
+    handleResize() {
+      this.screenWidth = window.innerWidth;
     },
   },
   beforeDestroy() {

@@ -31,6 +31,20 @@
         v-if="showOutline"
       >
         <div class="col-lg-6 col-12" id="service-card-left">
+          <img
+            src="images/services/contractc.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c"
+            v-if="screenWidth > 768"
+          />
+          <img
+            src="images/services/smolcontractc.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c-smol"
+            v-if="screenWidth < 768"
+          />
           <div
             id="card-left-content"
             class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
@@ -88,6 +102,20 @@
           </div>
         </div>
         <div class="col-lg-6 col-12" id="service-card-right">
+          <img
+            src="images/services/contractce.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-ce"
+            v-if="screenWidth > 768"
+          />
+          <img
+            src="images/services/smolcontractce.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-ce-smol"
+            v-if="screenWidth < 768"
+          />
           <div
             id="card-right-content"
             class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
@@ -100,7 +128,7 @@
             <div class="mycard-list mb-3">
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -110,7 +138,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -121,7 +149,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -131,7 +159,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -143,7 +171,7 @@
             <a
               href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
               target="_blank"
-              class="btn btn-success btn-getstarted-right me-2 mb-2"
+              class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
             >
           </div>
@@ -156,6 +184,21 @@
         v-if="!showOutline"
       >
         <div class="col-lg-6 col-12" id="service-card-left">
+          <img
+            src="images/services/contractr.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c"
+            v-if="screenWidth > 768"
+          />
+          <img
+            src="images/services/smolcontractr.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c-smol"
+            v-if="screenWidth < 768"
+          />
+
           <div
             id="card-left-content"
             class="p-5 d-flex service-card flex-column justify-content-between align-items-start mb-3"
@@ -213,6 +256,20 @@
           </div>
         </div>
         <div class="col-lg-6 col-12" id="service-card-right">
+          <img
+            src="images/services/contractre.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c"
+            v-if="screenWidth > 768"
+          />
+          <img
+            src="images/services/smolcontractre.svg"
+            alt=""
+            class="contract-badge"
+            id="contract-c-smol"
+            v-if="screenWidth < 768"
+          />
           <div
             id="card-right-content"
             class="service-card p-5 d-flex flex-column justify-content-between align-items-start mb-3"
@@ -225,7 +282,7 @@
             <div class="mycard-list mb-3">
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -235,7 +292,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -246,7 +303,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -256,7 +313,7 @@
               </div>
               <div class="d-flex">
                 <img
-                  src="images/services/checkWhite.png"
+                  src="images/services/checkGreen.png"
                   class="check me-2"
                   alt=""
                 />
@@ -268,7 +325,7 @@
             <a
               href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
               target="_blank"
-              class="btn btn-success btn-getstarted-right me-2 mb-2"
+              class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
             >
           </div>
@@ -285,7 +342,14 @@ export default {
       showOutline: true,
       left: true,
       righ: false,
+      screenWidth: window.innerWidth,
     };
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
   },
   methods: {
     showCreation() {
@@ -298,12 +362,30 @@ export default {
       this.left = false;
       this.right = true;
     },
+    handleResize() {
+      this.screenWidth = window.innerWidth;
+    },
   },
 };
 </script>
 <style scoped>
 #services {
   min-height: 125vh;
+}
+.contract-badge {
+  position: absolute;
+}
+#contract-c {
+  transform: translate(-6.6%, 38%);
+}
+#contract-ce {
+  transform: translate(-6.3%, 38%);
+}
+#contract-c-smol {
+  transform: translate(-9.5%, 38%);
+}
+#contract-ce-smol {
+  transform: translate(-9.5%, 38%);
 }
 .show {
   display: flex !important;
@@ -343,12 +425,13 @@ export default {
 
 #card-left-content {
   border: solid 1px #63727e;
-  border-radius: 16px;
+  border-radius: 24px;
   min-height: 615px;
 }
 #card-right-content {
-  background-color: #00b18f;
-  border-radius: 16px;
+  border: solid 1px #63727e;
+  /* background-color: #00b18f; */
+  border-radius: 24px;
   min-height: 615px;
 }
 
@@ -359,6 +442,7 @@ export default {
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 50px !important; /* 113.636% */
+  opacity: 0;
 }
 #card-right-content .mycard-title {
   color: white !important;
@@ -367,6 +451,7 @@ export default {
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 50px !important; /* 113.636% */
+  opacity: 0;
 }
 
 #card-left-content .mycard-description {
@@ -378,7 +463,7 @@ export default {
   line-height: 30px !important; /* 166.667% */
 }
 #card-right-content .mycard-description {
-  color: white !important;
+  color: #63727e !important;
   font-family: "Poppins" !important;
   font-size: 18px !important;
   font-style: normal !important;
@@ -397,7 +482,7 @@ export default {
   display: inline;
 }
 #card-right-content .mycard-list-text {
-  color: white !important;
+  color: black !important;
   /* Body 2 */
   font-family: "Poppins" !important;
   font-size: 18px !important;
@@ -523,6 +608,9 @@ export default {
   .btn-getstarted-left,
   .btn-getstarted-right {
     width: 100% !important;
+  }
+  .mycard-title {
+    margin-bottom: 1.5rem;
   }
 }
 </style>
