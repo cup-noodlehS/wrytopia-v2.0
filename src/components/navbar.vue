@@ -78,7 +78,7 @@
       <div class="d-flex flex-column px-3">
         <div class="conts">
           <a
-            href="https://www.facebook.com/cale.nina.1"
+            href="https://www.facebook.com/wrytopia"
             target="_blank"
             class="link-underline link-underline-opacity-0"
             ><span class="me-1"
@@ -195,7 +195,6 @@ export default {
   border-radius: 15px;
 }
 .navbar-nav {
-  /* justify-content: space-between; */
 }
 .navbar {
   height: 16.5vh !important;

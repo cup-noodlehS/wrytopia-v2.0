@@ -89,7 +89,7 @@
       <div class="mx-4" v-if="screenWidth > 768">
         <h5>FOLLOW US</h5>
         <a
-          href="https://www.facebook.com/cale.nina.1"
+          href="https://www.facebook.com/wrytopia"
           target="_blank"
           class="link-underline link-underline-opacity-0"
           ><span
@@ -175,7 +175,7 @@
       </div>
       <div v-if="screenWidth < 768" class="text-center mb-3" id="icons">
         <a
-          href="https://www.facebook.com/cale.nina.1"
+          href="https://www.facebook.com/wrytopia"
           target="_blank"
           class="text-decoration-none"
           ><svg
