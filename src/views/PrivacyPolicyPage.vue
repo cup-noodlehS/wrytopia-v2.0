@@ -31,20 +31,24 @@
           data:
         </p>
         1.1 Personal Information:
+
         <ul>
           <li>
             Name: We collect your name to enhance your experience and facilitate
             effective communication.
           </li>
+
           <li>
             Email Address: Your email address is mandatory for creating and
             managing your account, sending crucial notifications, and providing
             customer support.
           </li>
+
           <li>
             Age: We may collect your age to confirm that you meet the legal age
             requirements for using our services.
           </li>
+
           <li>
             Google Account Information: If you sign up using your Google
             account, we may collect limited information from your Google
@@ -53,6 +57,7 @@
           </li>
         </ul>
       </div>
+
       <div>
         <li class="bold">How We Use Your Information</li>
         <p>
@@ -60,51 +65,64 @@
           enhance and administer it. In general, we use the various categories
           of information we collect for the following purposes:
         </p>
+
         <ul>
           <li>To provide Platform services.</li>
+
           <li>
             To enhance and develop our Platform and engage in product
             development.
           </li>
+
           <li>
             To assess and understand the effectiveness of the advertising we
             serve to you and others, delivering targeted advertising.
           </li>
+
           <li>
             To employ User Content in our advertising and marketing campaigns
             promoting the Platform.
           </li>
+
           <li>
             To infer additional information about you, such as your age, gender,
             and interests, aiding in the detection of abuse, fraud, and illegal
             activity on the Platform.
           </li>
+
           <li>
             To verify your eligibility to use the Platform, as mandated by law.
           </li>
+
           <li>To offer customer support and respond to your queries.</li>
+
           <li>
             To communicate with you, including notifying you about changes in
             our services.
           </li>
+
           <li>
             To enforce our terms, conditions, and policies, and to meet our
             legal obligations.
           </li>
+
           <li>
             In line with your permissions, to furnish you with location-based
             services, like advertising and personalized content.
           </li>
+
           <li>
             To inform our algorithms by combining all the information we collect
             or receive about you for the aforementioned purposes.
           </li>
+
           <li>
             For any other purposes disclosed to you when we collect your
             information or as per your consent.
           </li>
         </ul>
       </div>
+
       <div>
         <li class="bold">The Security of Your Personal Data</li>
         <p>
@@ -116,6 +134,7 @@
           Any transmission is at your own risk.
         </p>
       </div>
+
       <div>
         <li class="bold">How Long We Keep Your Personal Data</li>
         <p>
@@ -128,6 +147,7 @@
           necessary for the establishment, exercise, or defense of legal claims.
         </p>
       </div>
+
       <div>
         <li class="bold">Information Relating to Children</li>
         <p>
@@ -143,6 +163,7 @@
           >.
         </p>
       </div>
+
       <div>
         <li class="bold">Complaints</li>
         <p>
@@ -155,6 +176,7 @@
           specified in the Terms of Service.
         </p>
       </div>
+
       <div>
         <li class="bold">Changes</li>
         <p>
@@ -168,6 +190,7 @@
           to the updated policy, kindly cease accessing or using the Platform.
         </p>
       </div>
+
       <div>
         <li class="bold">Contact</li>
         <p>
@@ -181,6 +204,7 @@
           >.
         </p>
       </div>
+      
       <div>
         <li class="bold">Changes to this Privacy Policy</li>
         <p>
@@ -198,24 +222,35 @@
     </ol>
   </div>
 </template>
+
+<script>
+export default{
+  name: 'PrivacyPolicyPage'
+}
+</script>
+
 <style scoped>
 .container {
   min-height: 100vh;
   margin-top: 150px;
   text-align: justify;
 }
+
 * {
   color: black !important;
   font-family: "Poppins" !important;
   font-weight: 400 !important;
   line-height: 200% !important;
 }
+
 strong {
   font-weight: 800 !important;
 }
+
 a {
   color: #00b18f !important;
 }
+
 .bold {
   font-weight: bold !important;
 }

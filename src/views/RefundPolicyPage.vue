@@ -67,24 +67,35 @@
     </ol>
   </div>
 </template>
+
+<script>
+export default{
+  name: 'RefundPolicyPage'
+}
+</script>
+
 <style scoped>
 .container {
   min-height: 100vh;
   margin-top: 150px;
   text-align: justify;
 }
+
 * {
   color: black !important;
   font-family: "Poppins" !important;
   font-weight: 400 !important;
   line-height: 200% !important;
 }
+
 strong {
   font-weight: 800 !important;
 }
+
 a {
   color: #00b18f !important;
 }
+
 .bold {
   font-weight: bold !important;
 }

@@ -1,35 +1,67 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "./views/home.vue";
-import About from "./views/about.vue";
-import NotFound from "./views/notfound.vue";
-import Terms from "./views/terms.vue";
-import Privacy from "./views/privacyPolicy.vue";
-import Refund from "./views/refundPolicy.vue";
+import LandingPage from "./views/LandingPage.vue";
+import AboutPage from "./views/AboutPage.vue";
+import Page404 from "./views/Page404.vue";
+import TermsAndConditionsPage from "./views/TermsAndConditionsPage.vue";
+import PrivacyPolicyPage from "./views/PrivacyPolicyPage.vue";
+import RefundPolicyPage from "./views/RefundPolicyPage.vue";
+
+const routes = [
+  {
+    path: "/",
+    component: LandingPage,
+    name: 'landing-page',
+    meta:{
+      title: 'Wytopia'
+    }
+  },
+  {
+    path: "/about",
+    component: AboutPage,
+    name: 'about-us',
+    meta: {
+      title: 'Wytopia | About us'
+    }
+  },
+  {
+    path: "/terms-and-conditions",
+    component: TermsAndConditionsPage,
+    name: 'terms-and-conditions',
+    meta: {
+      title: 'Wrytopia | Terms and Conditions'
+    }
+  },
+  {
+    path: "/privacy-policy",
+    component: PrivacyPolicyPage,
+    meta: {
+      title: 'Wrytopia | Privacy Policy'
+    }
+  },
+  {
+    path: "/refund-policy",
+    component: RefundPolicyPage,
+    meta: {
+      title: 'Wrytopia | Refund Policy'
+    }
+  },
+  {
+    path: "/:catchAll(.*)",
+    component: Page404,
+    meta: {
+      title: 'Page Not Found'
+    }
+  }
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    {
-      path: "/",
-      component: Home,
-    },
-    {
-      path: "/about",
-      component: About,
-    },
-    {
-      path: "/terms-and-conditions",
-      component: Terms,
-    },
-    {
-      path: "/privacy-policy",
-      component: Privacy,
-    },
-    {
-      path: "/refund-policy",
-      component: Refund,
-    },
-  ],
+  routes,
 });
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'Wrytopia';
+  next();
+})
 
 export default router;

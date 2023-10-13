@@ -147,8 +147,10 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
+  name: 'Navbar',
   data() {
     return {
       lastScrollPosition: 0,
@@ -179,6 +181,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .hidden {
   display: none;
@@ -193,8 +196,6 @@ export default {
   justify-content: end;
   background-color: white;
   border-radius: 15px;
-}
-.navbar-nav {
 }
 .navbar {
   height: 16.5vh !important;
@@ -211,9 +212,6 @@ export default {
 
 .nav-link {
   color: black !important;
-}
-#about-us {
-  /* margin-right: 200px; */
 }
 #contact-us {
   font-family: clashDisplayMedium !important;
