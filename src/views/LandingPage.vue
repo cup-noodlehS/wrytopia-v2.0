@@ -12,15 +12,15 @@
 </template>
 
 <script>
-import Cover from "../components/home/cover.vue";
-import Overview from "../components/home/overview.vue";
-import Features from "../components/home/features.vue";
-import Services from "../components/home/services.vue";
-import Hit from "../components/home/hit.vue";
-import Map from "../components/home/map.vue";
+import Cover from "../components/home/Cover.vue";
+import Overview from "../components/home/Overview.vue";
+import Features from "../components/home/Features.vue";
+import Services from "../components/home/Services.vue";
+import Hit from "../components/home/Hit.vue";
+import Map from "../components/home/Map.vue";
 
 export default {
-  name: 'LandingPage',
+  name: "LandingPage",
   components: {
     Cover,
     Map,

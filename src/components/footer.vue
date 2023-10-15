@@ -5,7 +5,7 @@
         <a href="/#">
           <img src="images/nav-logo.svg" class="mb-3" alt="" />
         </a>
-        <div v-if="screenWidth > 768">
+        <div v-if="!isTablet">
           <p>Copyright © 2023</p>
           <p>Wrytopia | All Rights Reserved</p>
         </div>
@@ -86,7 +86,7 @@
           >Refund Policy</a
         >
       </div>
-      <div class="mx-4" v-if="screenWidth > 768">
+      <div class="mx-4" v-if="!isTablet">
         <h5>FOLLOW US</h5>
         <a
           href="https://www.facebook.com/wrytopia"
@@ -173,7 +173,8 @@
           >Medium</a
         > -->
       </div>
-      <div v-if="screenWidth < 768" class="text-center mb-3" id="icons">
+      <div v-if="isTablet" class="text-center mb-3" id="icons">
+        <!-- facebook -->
         <a
           href="https://www.facebook.com/wrytopia"
           target="_blank"
@@ -204,6 +205,8 @@
               fill="#63727e"
             /></svg
         ></a>
+
+        <!-- linkedin -->
         <a href="#" class="text-decoration-none"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -225,6 +228,8 @@
               fill="#63727e"
             /></svg
         ></a>
+
+        <!-- medium -->
         <a href="#" class="text-decoration-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +247,7 @@
         </a>
       </div>
     </div>
-    <div v-if="screenWidth < 768">
+    <div v-if="isTablet">
       <hr />
       <p>Copyright © 2023</p>
       <p>Wrytopia | All Rights Reserved</p>
@@ -256,6 +261,11 @@ export default {
     return {
       screenWidth: window.innerWidth,
     };
+  },
+  computed: {
+    isTablet() {
+      return this.screenWidth < 768;
+    },
   },
   mounted() {
     window.addEventListener("resize", this.handleResize);
@@ -271,56 +281,65 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/stylesheets/sass/variables.scss";
+
 hr {
   color: #d4d2e3 !important;
 }
 #icons {
   width: 100% !important;
-}
-#icons a {
-  display: inline !important;
-  margin: 0 5px;
-}
-#icons svg {
-  width: 36px;
-  height: 36px;
+
+  a {
+    display: inline !important;
+    margin: 0 5px;
+  }
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
 }
 footer {
-  background-color: white;
+  background-color: $white;
   padding-left: 108px !important;
   padding-right: 108px !important;
   padding-top: 54px !important;
   padding-bottom: 54px !important;
   gap: 10px;
+
+  h5 {
+    color: $black !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 20px !important; /* 71.429% */
+    letter-spacing: 2.8px !important;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: $gray !important;
+    font-family: "Poppins" !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $black !important;
+    font-family: "Poppins" !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+
+  span {
+    margin-right: 8px;
+  }
 }
-footer h5 {
-  color: black !important;
-  font-size: 20px !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  line-height: 20px !important; /* 71.429% */
-  letter-spacing: 2.8px !important;
-  margin-bottom: 2rem;
-}
-footer a {
-  color: #63727e !important;
-  font-family: "Poppins" !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  display: block;
-  margin-bottom: 20px;
-}
-footer p {
-  color: black !important;
-  font-family: "Poppins" !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-}
-footer span {
-  margin-right: 8px;
-}
-@media only screen and (max-width: 768px) {
+
+@media #{$tablet} {
   .foot {
     justify-content: center !important;
     flex-wrap: wrap;
