@@ -163,6 +163,9 @@ export default {
   .navs {
     padding: 20px;
   }
+  .navbar{
+    height: 12vh !important;
+  }
 }
 // this is noting
 </style>

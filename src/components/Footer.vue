@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="d-flex flex-column">
     <div class="container-fluid d-flex foot justify-content-between">
       <div class="mx-4 mb-3">
         <a href="/#">
@@ -246,11 +246,15 @@
           </svg>
         </a>
       </div>
-    </div>
-    <div v-if="isTablet">
+      <div v-if="isTablet">
       <hr />
       <p>Copyright © 2023</p>
       <p>Wrytopia | All Rights Reserved</p>
+    </div>
+    </div>
+    <hr class="mt-5">
+    <div id="watermark" class="d-flex flex-wrap justify-content-center">
+      <p>Created by <a href="https://sheldonsagrado.vercel.app" target="_blank" class="text-decoration-none d-inline">Sheldon</a> & <a href="https://www.tiktok.com/@ethan_pptart" class="text-decoration-none d-inline" target="_blank">Ethan.ppt</a></p>
     </div>
   </footer>
 </template>
@@ -305,7 +309,7 @@ footer {
   padding-left: 108px !important;
   padding-right: 108px !important;
   padding-top: 54px !important;
-  padding-bottom: 54px !important;
+  padding-bottom: 24px !important;
   gap: 10px;
 
   h5 {
@@ -337,7 +341,14 @@ footer {
   span {
     margin-right: 8px;
   }
+
+  #watermark{
+    a{
+      color: $accent !important;
+    }
+  }
 }
+
 
 @media #{$tablet} {
   .foot {
