@@ -254,7 +254,7 @@
     </div>
     <hr class="mt-5">
     <div id="watermark" class="d-flex flex-wrap justify-content-center">
-      <p>Created by <a href="https://sheldonsagrado.vercel.app" target="_blank" class="text-decoration-none d-inline">Sheldon</a> & <a href="https://www.tiktok.com/@ethan_pptart" class="text-decoration-none d-inline" target="_blank">Ethan.ppt</a></p>
+      <p>Developed by <a href="https://sheldonsagrado.vercel.app" target="_blank" class="text-decoration-none d-inline">Sheldon</a> & <a href="https://www.tiktok.com/@ethan_pptart" class="text-decoration-none d-inline" target="_blank">Ethan.ppt</a></p>
     </div>
   </footer>
 </template>
