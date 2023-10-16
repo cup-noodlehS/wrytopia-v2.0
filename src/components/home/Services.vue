@@ -368,7 +368,10 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+@import "@/stylesheets/sass/variables.scss";
+
+
 #services {
   min-height: 125vh;
 }
@@ -508,6 +511,10 @@ export default {
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 20px !important; /* 71.429% */
+
+  &:hover{
+    color: $accent !important;
+  }
 }
 .service-option:hover {
   cursor: pointer;
