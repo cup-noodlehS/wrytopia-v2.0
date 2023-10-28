@@ -247,14 +247,29 @@
         </a>
       </div>
       <div v-if="isTablet">
-      <hr />
-      <p>Copyright © 2023</p>
-      <p>Wrytopia | All Rights Reserved</p>
+        <hr />
+        <p>Copyright © 2023</p>
+        <p>Wrytopia | All Rights Reserved</p>
+      </div>
     </div>
-    </div>
-    <hr class="mt-5">
+    <hr class="mt-5" />
     <div id="watermark" class="d-flex flex-wrap justify-content-center">
-      <p>Developed by <a href="https://sheldonsagrado.vercel.app" target="_blank" class="text-decoration-none d-inline">Sheldon</a> & <a href="https://www.tiktok.com/@ethan_pptart" class="text-decoration-none d-inline" target="_blank">Ethan.ppt</a></p>
+      <p>
+        Developed & designed by
+        <a
+          href="https://sheldonsagrado.vercel.app"
+          target="_blank"
+          class="text-decoration-none d-inline"
+          >Sheldon</a
+        >
+        ⨯
+        <a
+          href="https://www.tiktok.com/@ethan_pptart"
+          class="text-decoration-none d-inline"
+          target="_blank"
+          >Ethan.ppt</a
+        >
+      </p>
     </div>
   </footer>
 </template>
@@ -342,13 +357,12 @@ footer {
     margin-right: 8px;
   }
 
-  #watermark{
-    a{
+  #watermark {
+    a {
       color: $accent !important;
     }
   }
 }
-
 
 @media #{$tablet} {
   .foot {

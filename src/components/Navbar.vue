@@ -97,6 +97,7 @@ export default {
 @import "@/stylesheets/sass/variables.scss";
 
 #logo {
+  width: 80%;
   transition: all 0.4s ease;
 
   &:hover {
@@ -104,7 +105,7 @@ export default {
   }
 }
 .navbar {
-  height: 16.5vh !important;
+  height: 12vh !important;
   background-color: $white !important;
 
   .nav-pad {
@@ -163,7 +164,7 @@ export default {
   .navs {
     padding: 20px;
   }
-  .navbar{
+  .navbar {
     height: 12vh !important;
   }
 }
