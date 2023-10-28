@@ -1,0 +1,12 @@
+@font-face {
+  font-family: clashDisplayLight;
+  src: url(ClashDisplay-Light.woff);
+}
+@font-face {
+  font-family: clashDisplayRegular;
+  src: url(ClashDisplay-Regular.woff);
+}
+@font-face {
+  font-family: clashDisplayMedium;
+  src: url(ClashDisplay-Medium.woff);
+}

@@ -94,7 +94,7 @@
               </div>
             </div>
             <a
-              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              href="https://forms.gle/tUn4f36sVp2sEpzH6"
               target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
@@ -169,7 +169,7 @@
               </div>
             </div>
             <a
-              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              href="https://forms.gle/tUn4f36sVp2sEpzH6"
               target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
@@ -248,7 +248,7 @@
               </div>
             </div>
             <a
-              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              href="https://forms.gle/L13eawz21HQrG1YS9"
               target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
@@ -323,7 +323,7 @@
               </div>
             </div>
             <a
-              href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
+              href="https://forms.gle/L13eawz21HQrG1YS9"
               target="_blank"
               class="btn btn-success btn-getstarted-left me-2 mb-2"
               >GET STARTED</a
@@ -371,9 +371,8 @@ export default {
 <style scoped lang="scss">
 @import "@/stylesheets/sass/variables.scss";
 
-
 #services {
-  min-height: 125vh;
+  min-height: 100vh;
 }
 .contract-badge {
   position: absolute;
@@ -512,7 +511,7 @@ export default {
   font-weight: 600 !important;
   line-height: 20px !important; /* 71.429% */
 
-  &:hover{
+  &:hover {
     color: $accent !important;
   }
 }

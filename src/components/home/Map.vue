@@ -20,10 +20,7 @@
           v-if="screenWidth < 768"
         ></div>
 
-        <a
-          href="https://www.liveagent.com/app/uploads/2020/11/google-forms-logo.jpg"
-          class="btn btn-light btn-map me-2 mb-2 mt-3"
-          target="_blank"
+        <a href="/#services" class="btn btn-light btn-map me-2 mb-2 mt-3"
           >SCHEDULE AN APPOINTMENT</a
         >
       </div>

@@ -29,9 +29,14 @@
           Join forces with our experts!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="form-btn">
+          <a
+            href="https://forms.gle/tUn4f36sVp2sEpzH6"
+            target="_blank"
+            class="btn btn-primary"
+            id="form-btn"
+          >
             LEZGAWWW
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -67,9 +72,14 @@
           your outline? Collaborate with us!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="form-btn">
+          <a
+            href="https://forms.gle/L13eawz21HQrG1YS9"
+            target="_blank"
+            class="btn btn-primary"
+            id="form-btn"
+          >
             LEZGAWWW
-          </button>
+          </a>
         </div>
       </div>
     </div>
