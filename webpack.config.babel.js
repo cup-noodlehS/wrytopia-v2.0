@@ -7,6 +7,7 @@ module.exports = defineConfig({
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
+        images: path.resolve(__dirname, "public/images"),
       },
     },
   },

@@ -7,7 +7,9 @@
         id="tagline"
         class="d-flex flex-column justify-content-start align-items-center"
       >
-        <h1 class="mb-3">Empowering Authors, Framing Stories</h1>
+        <h1 class="mb-3">
+          Empowering <span class="idk">Authors,</span> Framing Stories
+        </h1>
         <p class="mb-3">
           Wrytopia is a reliable third-party agent committed to assisting global
           English writers by providing high-quality writing services that pave

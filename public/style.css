@@ -134,7 +134,7 @@ header {
 .idk {
   font-family: clashDisplayMedium !important;
   color: #00b18f;
-  font-size: 58px;
+  font-size: inherit !important;
 }
 
 .services {
