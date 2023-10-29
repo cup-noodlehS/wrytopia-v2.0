@@ -41,6 +41,11 @@
     <div class="body container">
       <div class="row">
         <div class="col-md-4 d-flex flex-column p-3 pt-4 section first">
+          <img
+            src="images/aboutpage/wingleft.svg"
+            alt=""
+            class="wing wing-left"
+          />
           <div class="d-flex justify-content-between">
             <h5>What <span class="accent">We Offer</span></h5>
             <img src="images/aboutpage/circle.svg" alt="" class="circle" />
@@ -74,7 +79,14 @@
         <div class="col-md-4 d-flex flex-column p-3 pt-4 section third">
           <div class="d-flex justify-content-between">
             <h5>Our <span class="accent">Team</span></h5>
-            <img src="images/aboutpage/circle.svg" alt="" class="circle" />
+            <div>
+              <img src="images/aboutpage/circle.svg" alt="" class="circle" />
+              <img
+                src="images/aboutpage/wingright.svg"
+                alt=""
+                class="wing wing-right"
+              />
+            </div>
           </div>
           <div class="d-flex align-items-center">
             <span class="dot"></span><span class="line"></span>
@@ -265,6 +277,22 @@ main {
         background-color: $black;
         display: inline-block;
         margin-left: 10px;
+      }
+    }
+
+    .wing {
+      position: absolute;
+      width: 150px;
+
+      &-left {
+        transform: translate(-10%, -155%);
+      }
+      &-right {
+        transform: translate(-90%, -155%);
+      }
+
+      @media #{$tablet} {
+        display: none;
       }
     }
   }
