@@ -203,7 +203,7 @@ td img {
   line-height: 30px !important;
 }
 .features-text {
-  width: 400px;
+  width: 350px;
 }
 #features-img {
   width: 100%;

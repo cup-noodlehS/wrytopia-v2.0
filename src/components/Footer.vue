@@ -344,6 +344,7 @@ footer {
     font-weight: 400 !important;
     display: block;
     margin-bottom: 20px;
+    white-space: nowrap;
   }
 
   p {

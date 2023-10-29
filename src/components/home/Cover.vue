@@ -97,10 +97,15 @@ export default {
 .cover {
   width: 100%;
   min-height: 83.5vh;
-  padding-top: 3%;
   padding-bottom: 1%;
   padding-left: 108px;
   padding-right: 108px;
+
+  @media #{$tablet} {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 30px;
+  }
 }
 #tagline {
   h1 {
@@ -110,6 +115,12 @@ export default {
     font-style: normal !important;
     font-weight: 600 !important;
     line-height: 66px !important;
+
+    @media #{$tablet} {
+      font-size: 28px !important;
+      text-align: center;
+      line-height: 40px !important;
+    }
   }
 
   p {
@@ -119,73 +130,60 @@ export default {
     font-weight: 400 !important;
     line-height: 30px !important;
     color: $gray !important;
-  }
 
-  .btn-write {
-    font-size: 15px;
-    min-width: 150px;
-    font-family: clashDisplayMedium !important;
-    color: white !important;
-    border-color: $accent !important;
-    background-color: $accent;
-    border-radius: 35px;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-    padding-top: 23px !important;
-    padding-bottom: 23px !important;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: #027962;
-      transform: translate(5px, -5px);
-      box-shadow: -5px 5px 0px #43cfb3;
-    }
-  }
-  .btn-revise {
-    font-size: 15px;
-    min-width: 150px;
-    font-family: clashDisplayMedium !important;
-    color: $accent !important;
-    border-color: $accent !important;
-    background-color: white;
-    border-width: 2px;
-    border-radius: 35px;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
-    padding-top: 23px !important;
-    padding-bottom: 23px !important;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translate(5px, -5px);
-      box-shadow: -5px 5px 0px #027962;
-      background-color: #ebeef2;
-    }
-  }
-}
-
-@media #{$tablet} {
-  .cover {
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-top: 20px !important;
-  }
-  #tagline {
-    h1 {
-      font-size: 28px !important;
-      text-align: center;
-      line-height: 40px !important;
-    }
-    p {
+    @media #{$tablet} {
       text-align: center;
       color: var(--Gray, $gray) !important;
     }
   }
 
   .tagline-buttons {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+    .btn-write {
+      font-size: 15px;
+      min-width: 150px;
+      font-family: clashDisplayMedium !important;
+      color: white !important;
+      border-color: $accent !important;
+      background-color: $accent;
+      border-radius: 35px;
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+      padding-top: 23px !important;
+      padding-bottom: 23px !important;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #027962;
+        transform: translate(5px, -5px);
+        box-shadow: -5px 5px 0px #43cfb3;
+      }
+    }
+    .btn-revise {
+      font-size: 15px;
+      min-width: 150px;
+      font-family: clashDisplayMedium !important;
+      color: $accent !important;
+      border-color: $accent !important;
+      background-color: white;
+      border-width: 2px;
+      border-radius: 35px;
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+      padding-top: 23px !important;
+      padding-bottom: 23px !important;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translate(5px, -5px);
+        box-shadow: -5px 5px 0px #027962;
+        background-color: #ebeef2;
+      }
+    }
+
+    @media #{$tablet} {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+    }
   }
 }
-// this is nothing
 </style>

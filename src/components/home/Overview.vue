@@ -68,34 +68,33 @@ export default {
   },
 };
 </script>
-<style scoped>
+
+<style scoped lang="scss">
+@import "@/stylesheets/sass/variables.scss";
+
 .overview {
   background-color: white;
-}
 
-.wiw {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 2.8px;
-}
-#wiw-title {
-  color: rgba(0, 0, 0, 0.5) !important;
-  text-align: center !important;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: clashDisplayMedium !important;
-  font-size: 28px !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  line-height: 20px !important; /* 71.429% */
-  letter-spacing: 2.8px !important;
-}
-@media only screen and (max-width: 768px) {
   #wiw-title {
-    font-size: 16px !important;
-    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-align: center !important;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: clashDisplayMedium !important;
+    font-size: 28px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 20px !important; /* 71.429% */
+    letter-spacing: 2.8px !important;
+
+    @media #{$tablet} {
+      font-size: 16px !important;
+      line-height: 20px;
+    }
+  }
+
+  .animation-cover {
+    width: 80%;
+    height: 80%;
   }
 }
-/* this is nothing */
 </style>
