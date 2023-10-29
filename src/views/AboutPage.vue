@@ -48,7 +48,11 @@
           />
           <div class="d-flex justify-content-between">
             <h5>What <span class="accent">We Offer</span></h5>
-            <img src="images/aboutpage/circle.svg" alt="" class="circle" />
+            <img
+              src="images/aboutpage/accentCircle.svg"
+              alt=""
+              class="circle"
+            />
           </div>
           <div class="d-flex align-items-center">
             <span class="dot"></span><span class="line"></span>
@@ -63,7 +67,11 @@
         <div class="col-md-4 d-flex flex-column p-3 pt-4 section second">
           <div class="d-flex justify-content-between">
             <h5>Our <span class="accent">Vision</span></h5>
-            <img src="images/aboutpage/circle.svg" alt="" class="circle" />
+            <img
+              src="images/aboutpage/accentCircle.svg"
+              alt=""
+              class="circle"
+            />
           </div>
           <div class="d-flex align-items-center">
             <span class="dot"></span><span class="line"></span>
@@ -80,7 +88,11 @@
           <div class="d-flex justify-content-between">
             <h5>Our <span class="accent">Team</span></h5>
             <div>
-              <img src="images/aboutpage/circle.svg" alt="" class="circle" />
+              <img
+                src="images/aboutpage/accentCircle.svg"
+                alt=""
+                class="circle"
+              />
               <img
                 src="images/aboutpage/wingright.svg"
                 alt=""
