@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="115" height="49" viewBox="0 0 115 49" fill="none">
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 115 0)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 95 0)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 75 0)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 115 19)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 115 38)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 95 38)" fill="black"/>
+  <circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-1 0 0 1 75 38)" fill="black"/>
+  <line y1="-3.5" x2="95" y2="-3.5" transform="matrix(-1 0 0 1 95 28)" stroke="black" stroke-width="7"/>
+</svg>
