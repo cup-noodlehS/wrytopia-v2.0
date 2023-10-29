@@ -69,6 +69,7 @@
               /></svg></span
           >Cebu City, Philippines 6000
         </a>
+        <a href="/about#" class="about">About us</a>
       </div>
       <div class="mx-4 mb-3">
         <h5>LEGAL POLICIES</h5>
@@ -345,6 +346,10 @@ footer {
     display: block;
     margin-bottom: 20px;
     white-space: nowrap;
+
+    & + .about {
+      color: $accent !important;
+    }
   }
 
   p {

@@ -33,9 +33,10 @@
               <a href="/#hit" class="nav-link hover-lift">HOW IT WORKS</a>
             </li>
             <li class="nav-item delay1" id="about-us">
-              <router-link to="/about" class="nav-link hover-lift"
+              <!-- <router-link to="/about" class="nav-link hover-lift"
                 >ABOUT US</router-link
-              >
+              > -->
+              <a href="/about#" class="nav-link hover-lift">ABOUT US</a>
             </li>
             <li class="nav-item">
               <a
