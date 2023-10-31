@@ -13,7 +13,7 @@
         <p class="mb-3">
           Wrytopia is a reliable third-party agent committed to assisting global
           English writers by providing high-quality writing services that pave
-          the way for your writing carer.
+          the way for your writing career.
         </p>
         <div
           ref="lottieContainer"
