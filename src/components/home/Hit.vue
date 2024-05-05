@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container-fluid hit pt-3"
+    class="container hit pt-3"
     id="hit"
     ref="hit"
     :class="{ show: slideleft }"

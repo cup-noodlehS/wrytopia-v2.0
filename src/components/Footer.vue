@@ -1,5 +1,5 @@
 <template>
-  <footer class="d-flex flex-column">
+  <footer class="container d-flex flex-column">
     <div class="container-fluid d-flex foot justify-content-between">
       <div class="mx-4 mb-3">
         <a href="/#">

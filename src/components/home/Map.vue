@@ -1,28 +1,30 @@
 <template>
   <div class="map-cont" :class="{ 'slide-right1 show': slide }">
-    <div class="container-fluid map row align-items-center mx-0">
-      <div class="col-lg-6 col-12">
-        <div
-          ref="lottieContainer"
-          class="animation-cover"
-          v-if="screenWidth > 768"
-        ></div>
-        <!-- <div id="animation2 container2" class="animation-cover"></div> -->
-      </div>
-      <div class="col-lg-6 col-12 p-0">
-        <h1 ref="myElement">
-          Ready to map your<br />
-          story? Let's Go!
-        </h1>
-        <div
-          ref="lottieContainer"
-          class="animation-cover"
-          v-if="screenWidth < 768"
-        ></div>
+    <div class="map mx-0 d-flex justify-content-center">
+      <div class="container row align-items-center">
+        <div class="col-lg-6 col-12">
+          <div
+            ref="lottieContainer"
+            class="animation-cover"
+            v-if="screenWidth > 768"
+          ></div>
+          <!-- <div id="animation2 container2" class="animation-cover"></div> -->
+        </div>
+        <div class="col-lg-6 col-12 p-0">
+          <h1 ref="myElement">
+            Ready to map your<br />
+            story? Let's Go!
+          </h1>
+          <div
+            ref="lottieContainer"
+            class="animation-cover"
+            v-if="screenWidth < 768"
+          ></div>
 
-        <a href="/#services" class="btn btn-light btn-map me-2 mb-2 mt-3"
-          >SCHEDULE AN APPOINTMENT</a
-        >
+          <a href="/#services" class="btn btn-light btn-map me-2 mb-2 mt-3"
+            >SCHEDULE AN APPOINTMENT</a
+          >
+        </div>
       </div>
     </div>
   </div>

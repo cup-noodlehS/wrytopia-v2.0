@@ -1,49 +1,51 @@
 <template>
-  <div class="cover row overflow-hidden m-0">
-    <div
-      class="cover-tagline mb-1 pb-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-right1 delay1"
-    >
+  <div class="cover overflow-hidden m-0 d-flex justify-content-center">
+    <div class="row container">
       <div
-        id="tagline"
-        class="d-flex flex-column justify-content-start align-items-center"
+        class="cover-tagline mb-1 pb-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-right1 delay1"
       >
-        <h1 class="mb-3">
-          Empowering <span class="idk">Authors,</span> Framing Stories
-        </h1>
-        <p class="mb-3">
-          Wrytopia is a reliable third-party agent committed to assisting global
-          English writers by providing high-quality writing services that pave
-          the way for your writing career.
-        </p>
         <div
-          ref="lottieContainer"
-          class="animation-cover"
-          v-if="isTablet"
-        ></div>
-        <div
-          class="tagline-buttons container-fluid d-flex justify-content-start p-0"
+          id="tagline"
+          class="d-flex flex-column justify-content-start align-items-center"
         >
-          <a
-            href=""
-            class="btn btn-success btn-write me-2 mb-2"
-            data-bs-toggle="modal"
-            data-bs-target="#modalWrite"
-            >WRITE ME AN OUTLINE</a
+          <h1 class="mb-3">
+            Empowering <span class="idk">Authors,</span> Framing Stories
+          </h1>
+          <p class="mb-3">
+            Wrytopia is a reliable third-party agent committed to assisting global
+            English writers by providing high-quality writing services that pave
+            the way for your writing career.
+          </p>
+          <div
+            ref="lottieContainer"
+            class="animation-cover"
+            v-if="isTablet"
+          ></div>
+          <div
+            class="tagline-buttons container-fluid d-flex justify-content-start p-0"
           >
-          <a
-            href=""
-            class="btn btn-success btn-revise me-2 mb-2"
-            data-bs-toggle="modal"
-            data-bs-target="#modalRevise"
-            >REVISE ME AN OUTLINE</a
-          >
+            <a
+              href=""
+              class="btn btn-success btn-write me-2 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalWrite"
+              >WRITE ME AN OUTLINE</a
+            >
+            <a
+              href=""
+              class="btn btn-success btn-revise me-2 mb-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRevise"
+              >REVISE ME AN OUTLINE</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="cover-img px-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-left1 delay4"
-    >
-      <div ref="lottieContainer" class="animation-cover" v-if="!isTablet"></div>
+      <div
+        class="cover-img px-3 col-12 col-lg-6 d-flex justify-content-center align-items-center slide-left1 delay4"
+      >
+        <div ref="lottieContainer" class="animation-cover" v-if="!isTablet"></div>
+      </div>
     </div>
   </div>
   <CoverModals />

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="services mb-5 pt-3 d-flex flex-column align-items-center"
+    class="services mb-5 pt-3 d-flex flex-column align-items-center container"
     id="services"
   >
     <center><h1 id="services-title">SERVICES</h1></center>
@@ -372,7 +372,6 @@ export default {
 @import "@/stylesheets/sass/variables.scss";
 
 #services {
-  min-height: 100vh;
 }
 .contract-badge {
   position: absolute;
@@ -414,27 +413,22 @@ export default {
 }
 .service-card-container {
   width: 100%;
-  min-height: 80vh;
 }
 
 #service-card-left {
-  min-height: 550px;
 }
 
 #service-card-right {
-  min-height: 550px;
 }
 
 #card-left-content {
   border: solid 1px #63727e;
   border-radius: 24px;
-  min-height: 615px;
 }
 #card-right-content {
   border: solid 1px #63727e;
   /* background-color: #00b18f; */
   border-radius: 24px;
-  min-height: 615px;
 }
 
 #card-left-content .mycard-title {

@@ -1,41 +1,29 @@
 <template>
   <main>
-    <div class="d-flex flex-column align-items-center header">
-      <!-- <div class="d-flex flex-column align-items-center small-title">
-        <h4 class="text-center m-0">About us</h4>
-        <hr class="m-0" />
-      </div> -->
-      <div class="title d-flex justify-content-center flex-wrap">
-        <img src="images/aboutpage/dick.svg" class="dick dick-left" alt="" />
-        <h1 class="title-text me-3 mb-0" style="color: black !important">
-          About
-        </h1>
-        <div class="d-flex">
-          <h1 class="title-text">Wrytopia</h1>
-          <svg
-            class="circle"
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle cx="20" cy="20" r="20" fill="#00b18f" />
-          </svg>
+    <div class="header mt-5 d-flex justify-content-center">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="title d-flex justify-content-center flex-wrap">
+          <h1 class="title-text me-3 mb-0" style="color: black !important">
+            About
+          </h1>
+          <div class="d-flex">
+            <h1 class="title-text">Wrytopia</h1>
+            <img src="/images/logo.svg" alt="" class="logo">
+          </div>
         </div>
-      </div>
-      <div class="subtitle text-start">
-        <h5>
-          We work with you to craft your vision, from concept to
-          <span>{{ typewriteWord }}</span
-          ><span class="blinking-element">|</span>
-        </h5>
-        <p class="text-start">
-          At Wrytopia, we're not just a startup; we're your launchpad to take
-          your stories to new heights. Our mission is to empower authors by
-          providing a writing-assistant platform that guides you with where you
-          should be headed to with your stories.
-        </p>
+        <div class="subtitle text-start">
+          <h5>
+            We work with you to craft your vision, from concept to
+            <span>{{ typewriteWord }}</span
+            ><span class="blinking-element">|</span>
+          </h5>
+          <p class="text-start">
+            At Wrytopia, we're not just a startup; we're your launchpad to take
+            your stories to new heights. Our mission is to empower authors by
+            providing a writing-assistant platform that guides you with where you
+            should be headed to with your stories.
+          </p>
+        </div>
       </div>
     </div>
     <div class="body container">
@@ -54,7 +42,7 @@
               class="circle"
             />
           </div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center mb-2">
             <span class="dot"></span><span class="line"></span>
           </div>
           <p>
@@ -73,7 +61,7 @@
               class="circle"
             />
           </div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center mb-2">
             <span class="dot"></span><span class="line"></span>
           </div>
           <p>
@@ -100,7 +88,7 @@
               />
             </div>
           </div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center mb-2">
             <span class="dot"></span><span class="line"></span>
           </div>
           <p>
@@ -126,6 +114,7 @@
     </div>
   </main>
 </template>
+
 <script>
 export default {
   name: "AboutPage",
@@ -174,19 +163,6 @@ main {
     overflow-x: hidden;
     max-width: 100%;
 
-    // .small-title {
-    //   & * {
-    //     color: $black !important;
-    //   }
-
-    //   hr {
-    //     width: 80%;
-    //     opacity: 1;
-    //     background: $black;
-    //     height: 3px;
-    //   }
-    // }
-
     .title {
       .title-text {
         font-size: 7rem !important;
@@ -196,9 +172,13 @@ main {
           font-size: 3rem !important;
         }
       }
-      .circle {
+      .logo {
+        height: 3rem;
+        transform: rotate(45deg) translate(0, 25%);
+
         @media #{$tablet} {
-          width: 20px;
+          height: 2rem;
+          transform: rotate(45deg) translate(0, 0);
         }
       }
       .dick {
@@ -284,11 +264,10 @@ main {
         display: inline-block;
       }
       .line {
-        width: 70%;
+        width: 80%;
         height: 3px;
         background-color: $black;
         display: inline-block;
-        margin-left: 10px;
       }
     }
 
