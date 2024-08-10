@@ -106,7 +106,7 @@ export default {
   }
 }
 .navbar {
-  height: 12vh !important;
+  padding: 20px 0;
   background-color: $white !important;
 
   .nav-pad {
